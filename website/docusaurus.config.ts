@@ -510,7 +510,7 @@ export default async function createConfigAsync() {
         logo: {
           alt: '',
           src: 'img/metamask-fox.svg',
-          srcDark: 'img/metamask-logo-dark.svg',
+          srcDark: 'img/metamask-fox.svg',
           width: 32,
           height: 32,
         },
