@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[88587],{32067:e=>{e.exports=JSON.parse('{"permalink":"/zh-CN/changelog","page":1,"postsPerPage":20,"totalPages":5,"totalCount":88,"nextPage":"/zh-CN/changelog/page/2","blogDescription":"Keep yourself up-to-date about new features in every release","blogTitle":"Docusaurus changelog"}')}}]);
