@@ -113,13 +113,13 @@ function getLocalizedConfigValue(key: string) {
 
 export default async function createConfigAsync() {
   return {
-    title: 'WoofWoof',
+    title: 'Gitcoins',
     tagline: getLocalizedConfigValue('tagline'),
-    organizationName: 'vulnsystem',
-    projectName: 'vulnsystem.github.io',
+    organizationName: 'thebestornothing',
+    projectName: 'thebestornothing.github.io',
     baseUrl,
     baseUrlIssueBanner: true,
-    url: 'https://vulnsystem.github.io',
+    url: 'https://thebestornothing.github.io',
     // Dogfood both settings:
     // - force trailing slashes for deploy previews
     // - avoid trailing slashes in prod
@@ -245,7 +245,7 @@ export default async function createConfigAsync() {
             if (locale !== defaultLocale) {
               return `https://crowdin.com/project/docusaurus-v2/${locale}`;
             }
-            return `https://github.com/vulnsystem/vulnsystem.github.io/edit/main/website/${versionDocsDirPath}/${docPath}`;
+            return `https://github.com/thebestornothing/thebestornothing.github.io/edit/main/website/${versionDocsDirPath}/${docPath}`;
           },
           remarkPlugins: [npm2yarn],
           editCurrentVersion: true,
@@ -377,7 +377,7 @@ export default async function createConfigAsync() {
               // We want users to submit updates to the upstream/next version!
               // Otherwise we risk losing the update on the next release.
               const nextVersionDocsDirPath = 'docs';
-              return `https://github.com/vulnsystem/vulnsystem.github.io/edit/main/website/${nextVersionDocsDirPath}/${docPath}`;
+              return `https://github.com/thebestornothing/thebestornothing.github.io/edit/main/website/${nextVersionDocsDirPath}/${docPath}`;
             },
             admonitions: {
               keywords: ['my-custom-admonition'],
@@ -420,7 +420,7 @@ export default async function createConfigAsync() {
               if (locale !== defaultLocale) {
                 return `https://crowdin.com/project/docusaurus-v2/${locale}`;
               }
-              return `https://github.com/vulnsystem/vulnsystem.github.io/edit/main/website/${blogDirPath}/${blogPath}`;
+              return `https://github.com/thebestornothing/thebestornothing.github.io/edit/main/website/${blogDirPath}/${blogPath}`;
             },
             remarkPlugins: [npm2yarn],
             postsPerPage: 5,
@@ -557,13 +557,13 @@ export default async function createConfigAsync() {
                 value: '<hr style="margin: 0.3rem 0;">',
               },
               {
-                href: 'https://github.com/vulnsystem/vulnsystem.github.io/issues/3526',
+                href: 'https://github.com/thebestornothing/thebestornothing.github.io/issues/3526',
                 label: 'Help Us Translate',
               },
             ],
           },
           {
-            href: 'https://github.com/vulnsystem/vulnsystem.github.io',
+            href: 'https://github.com/thebestornothing/thebestornothing.github.io',
             position: 'right',
             className: 'header-github-link',
             'aria-label': 'GitHub repository',
@@ -582,23 +582,23 @@ export default async function createConfigAsync() {
             items: [
               {
                 label: 'Homepage',
-                href: 'https://github.com/vulnsystem/vulnsystem.github.io/edit/main/website/src/pages/index.tsx',
+                href: 'https://github.com/thebestornothing/thebestornothing.github.io/edit/main/website/src/pages/index.tsx',
               },
               {
                 label: 'Configuration',
-                href: 'https://github.com/vulnsystem/vulnsystem.github.io/edit/main/website/docusaurus.config.ts',
+                href: 'https://github.com/thebestornothing/thebestornothing.github.io/edit/main/website/docusaurus.config.ts',
               },
               {
                 label: 'Sidebar',
-                href: 'https://github.com/vulnsystem/vulnsystem.github.io/edit/main/website/sidebars.ts',
+                href: 'https://github.com/thebestornothing/thebestornothing.github.io/edit/main/website/sidebars.ts',
               },
               {
                 label: 'Actions',
-                href: 'https://github.com/vulnsystem/vulnsystem.github.io/actions',
+                href: 'https://github.com/thebestornothing/thebestornothing.github.io/actions',
               },
               {
                 label: 'Docs',
-                href: 'https://github.com/vulnsystem/vulnsystem.github.io/tree/main/website/docs',
+                href: 'https://github.com/thebestornothing/thebestornothing.github.io/tree/main/website/docs',
               },
             ],
           },
@@ -636,7 +636,7 @@ export default async function createConfigAsync() {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/vulnsystem/vulnsystem.github.io',
+                href: 'https://github.com/thebestornothing/thebestornothing.github.io',
               },
               {
                 label: 'Twitter',
