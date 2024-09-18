@@ -1,67 +1,55 @@
 ---
-description: WoofWoof is anonymous, end-to-end cryptography distributed event streaming platform.
+description: MetaMask GPT was designed from the ground up to be easily used to get your wallet.
 slug: /
 ---
 
 # Introduction
-To create an **anonymous**, **privacy-focused**, and **untraceable** environment, We are building a platform named "WoofWoof". It is end-to-end cryptography distributed event streaming platform based on Kafka, powered by of Ethereum.
 
-## Design principles
+Implementing an application like **MetaMask GPT**, which leverages a Generative Pre-trained Transformer (GPT) model, instead of a traditional decentralized application (DApp) or mobile app, offers several distinct advantages. These benefits stem from the inherent capabilities of GPT models to understand and generate natural language, providing a more intuitive and flexible user experience. Here are the key advantages:
 
-- **Privacy protection**: Encrypting sensitive information helps secure it from unauthorized access. This includes encrypting data in transit (during communication) and data at rest (when stored). Preventing the creation of detailed UserProfile of individual users based on their activities, behaviors, or personal information.
+⚡️ **Natural Language Interaction:** Users can interact with their wallet using everyday language, eliminating the need to navigate complex interfaces or remember specific commands. For example, instead of clicking through multiple menus to send funds, a user can simply say, "Send 0.5 ETH to Alice.".
 
-- **Untraceable**: Transactions and message made with crypto can be challenging to link to specific individuals. The sender and recipient of a message cannot be easily identified or located. Tracking would be difficult, complex, or highly obscured. 
+💸 **Enhanced Usability and User Engagement:** GPT can provide step-by-step guidance for various wallet operations, such as setting up the wallet, performing transactions, or managing security settings. This reduces the learning curve and enhances user confidence.
 
-- **Made Easy**: Break down complex problems into smaller, manageable modules. Use clear and understandable abstractions to hide unnecessary details. Tools like Docker can simplify deployment by encapsulating applications and their dependencies. 
+💥 **Streamlined Development and Maintenance:** By relying on natural language interactions, the need for extensive graphical user interfaces (GUIs) is minimized. This can lead to faster development cycles and easier maintenance.
 
-- **Collaboration**: No licensing to prevent users from using the software for various purposes. Encourage collaboration not only to develop software, but also to build untraceable and privacy protection environment.
+💅 **Multilingual Support:** GPT models can understand and generate text in multiple languages, making the wallet accessible to a broader, global audience without the need for extensive localization efforts.
 
-We believe that, as developers and users, knowing how a library works helps us become better at using it. Hence we're dedicating effort to explaining the architecture and various components of WoofWoof with the hope that users reading it will gain a deeper understanding of the tool and be even more proficient in using it.
+🧐 **Integration with Other Services:** GPT-based wallets can more easily integrate with other services and platforms through conversational APIs, enabling functionalities like querying blockchain data, interacting with decentralized finance (DeFi) protocols, or accessing NFT marketplaces directly through chat.
 
-## Features
+💅 **Rich Analytics and Insights:** Interaction data can provide valuable insights into user behavior, preferences, and common issues, which can be used to improve the application continuously.
 
-WoofWoof integrates the fault-tolerance, scalability, and stream-processing capabilities of Apache Kafka with Ethereum's features of anonymous authentication and smart contract-based authorization. The implementation also emphasizes end-to-end cryptography using secp256k1 for key pair generation, ECDH for secure key exchange, and symmetric-key cryptography for message encryption in the context of a distributed system.
+![](/img/slash-introducing.svg)
 
+## What is MetaMask
 
-### Based on Kafka
+🦖 **[MetaMask](https://metamask.io/)** is a software cryptocurrency wallet used to interact with the Ethereum blockchain. It allows users to manage their Ethereum-based assets, including Ether (ETH) and various ERC-20 tokens, and interact seamlessly with decentralized applications (DApps) directly from a web browser or mobile device.
 
-[Apache Kafka](https://kafka.apache.org/) is an open-source distributed event streaming platform used for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications. So WoofWoof will inherit  all the fundamental features of Apache Kafka like fault-tolerance, scalability, durability, stream-processing.
+## Fast Track ⏱️ {#fast-track}
 
-### Powered by Ethereum
+Understand Docusaurus in **5 minutes** by playing!
 
-- **Anonymous authentication**: Users can access the system or service without providing any explicit identification credentials like identity card and cell-phone number. Users generate an Ethereum private key to create a digital signature of a specific message as authenticity. The service that needs to verify the user's authenticity which can verify the signature using the user's public key. If the signature is valid, it proves that the user possesses the private key corresponding to the public key used for verification.
+Create a new Docusaurus site and follow the **very short** embedded tutorial.
 
-- **Smart contracts authorization**: Define the access control logic within the smart contract. This logic specifies who has permission to execute certain functions or access particular data. Implement logic in the smart contract that check the authorization of a user before allowing them to execute certain actions. 
+Install [Node.js](https://nodejs.org/en/download/) and create a new Docusaurus site:
 
-### End-to-end cryptography
+```bash
+npx create-docusaurus@latest my-website classic
+```
 
-Implementing end-to-end cryptography with a focus on secure key exchange using Elliptic Curve Diffie-Hellman (ECDH) and symmetric-key cryptography for message encryption.
+Start the site:
 
-- **Key Pair Generation with secp256k1**: Utilize the crypto's secp256k1 elliptic curve to generate pairs of public and private keys for each participant in the system.
+```bash
+cd my-website
+npx docusaurus start
+```
 
-- **Establishing a Secure Key Exchange Protocol with ECDH**: Implement the Elliptic Curve Diffie-Hellman (ECDH) key exchange protocol for secure key exchange. 
-  - Participants exchange crypto's secp256k1 public keys.
-  - Each participant combines their private key with the received public key to derive a shared secret.
+Open [`http://localhost:3000`](http://localhost:3000) and follow the tutorial.
 
-- **Derive Symmetric Key from Shared Secret**: Use a key derivation function (KDF) to derive a symmetric key from the shared secret obtained through the ECDH key exchange. This symmetric key will be used for symmetric-key encryption.
+:::tip
 
-- **Symmetric-Key Cryptography for Message Encryption**: Choose a strong symmetric-key encryption algorithm (e.g., AES) and use the derived symmetric key to encrypt the actual messages. Ensure that each communication session has a unique symmetric key to enhance security.
+Use **[docusaurus.new](https://docusaurus.new)** to test Docusaurus immediately in your browser!
 
-- **Message Decryption**: Participants use the same derived symmetric key to decrypt the received messages.
+Or read the **[5-minute tutorial](https://tutorial.docusaurus.io)** online.
 
-
-### Distributed system 
-
-
-- **Multiple Nodes**: The system consists of multiple independent nodes or machines that communicate and coordinate with each other.
-
-- **Communication**: Nodes communicate with each other to share information and coordinate their activities. This communication can happen through various mechanisms, such as message passing or remote procedure calls.
-
-- **Fault Tolerance**: Distributed systems are designed to be resilient to failures. If one node fails, the system should be able to continue functioning.
-
-- **Scalability**: The system can scale horizontally by adding more nodes, allowing it to handle increased workloads.
-
-## Something missing?
-
-If you find issues with the documentation or have suggestions on how to improve the WoofWoof or the project in general, please [file an issue](https://github.com/woofwoof/docusaurus) for us.
-
+:::
