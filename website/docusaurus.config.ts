@@ -506,11 +506,11 @@ export default async function createConfigAsync() {
       },
       navbar: {
         hideOnScroll: true,
-        title: 'WoofWoof',
+        title: 'Gitcoins',
         logo: {
           alt: '',
-          src: 'img/docusaurus.svg',
-          srcDark: 'img/docusaurus_keytar.svg',
+          src: 'img/metamask-fox.svg',
+          srcDark: 'img/metamask-logo-dark.svg',
           width: 32,
           height: 32,
         },
@@ -519,7 +519,7 @@ export default async function createConfigAsync() {
             type: 'doc',
             position: 'left',
             docId: 'introduction',
-            label: 'Developer',
+            label: 'MetaMask GPT',
           },
           {to: 'blog', label: 'Blog', position: 'left'},
           {to: 'showcase', label: 'Showcase', position: 'left'},
