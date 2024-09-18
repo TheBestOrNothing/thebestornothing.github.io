@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://vulnsystem.github.io/changelog</id>
+    <id>https://thebestornothing.github.io/changelog</id>
     <title>Docusaurus changelog</title>
     <updated>2023-10-31T20:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://vulnsystem.github.io/changelog"/>
+    <link rel="alternate" href="https://thebestornothing.github.io/changelog"/>
     <subtitle>Keep yourself up-to-date about new features in every release</subtitle>
-    <icon>https://vulnsystem.github.io/img/docusaurus.ico</icon>
+    <icon>https://thebestornothing.github.io/img/docusaurus.ico</icon>
     <rights>Copyright © 2024 Facebook, Inc.</rights>
     <entry>
         <title type="html"><![CDATA[3.0.0]]></title>
-        <id>https://vulnsystem.github.io/changelog/3.0.0</id>
-        <link href="https://vulnsystem.github.io/changelog/3.0.0"/>
+        <id>https://thebestornothing.github.io/changelog/3.0.0</id>
+        <link href="https://thebestornothing.github.io/changelog/3.0.0"/>
         <updated>2023-10-31T20:00:00.000Z</updated>
         <summary type="html"><![CDATA[Breaking Change]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="boom-breaking-change">💥 Breaking Change<a href="https://vulnsystem.github.io/changelog/3.0.0#boom-breaking-change" class="hash-link" aria-label="Direct link to 💥 Breaking Change" title="Direct link to ���💥 Breaking Change">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="boom-breaking-change">💥 Breaking Change<a href="https://thebestornothing.github.io/changelog/3.0.0#boom-breaking-change" class="hash-link" aria-label="Direct link to 💥 Breaking Change" title="Direct link to ���💥 Breaking Change">​</a></h2>
 <ul>
 <li><code>create-docusaurus</code>, <code>docusaurus-mdx-loader</code>, <code>docusaurus-plugin-content-blog</code>, <code>docusaurus-remark-plugin-npm2yarn</code>, <code>docusaurus-theme-classic</code>
 <ul>
@@ -87,7 +87,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="rocket-new-feature">🚀 New Feature<a href="https://vulnsystem.github.io/changelog/3.0.0#rocket-new-feature" class="hash-link" aria-label="Direct link to 🚀 New Feature" title="Direct link to 🚀 New Feature">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="rocket-new-feature">🚀 New Feature<a href="https://thebestornothing.github.io/changelog/3.0.0#rocket-new-feature" class="hash-link" aria-label="Direct link to 🚀 New Feature" title="Direct link to 🚀 New Feature">​</a></h2>
 <ul>
 <li><code>create-docusaurus</code>, <code>docusaurus-mdx-loader</code>, <code>docusaurus-plugin-content-blog</code>, <code>docusaurus-remark-plugin-npm2yarn</code>, <code>docusaurus-theme-classic</code>
 <ul>
@@ -188,7 +188,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://vulnsystem.github.io/changelog/3.0.0#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://thebestornothing.github.io/changelog/3.0.0#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
 <ul>
 <li><code>docusaurus-theme-common</code>
 <ul>
@@ -310,7 +310,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="running-performance">:running: Performance<a href="https://vulnsystem.github.io/changelog/3.0.0#running-performance" class="hash-link" aria-label="Direct link to :running: Performance" title="Direct link to :running: Performance">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="running-performance">:running: Performance<a href="https://thebestornothing.github.io/changelog/3.0.0#running-performance" class="hash-link" aria-label="Direct link to :running: Performance" title="Direct link to :running: Performance">​</a></h2>
 <ul>
 <li><code>docusaurus</code>
 <ul>
@@ -324,7 +324,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="nail_care-polish">💅 Polish<a href="https://vulnsystem.github.io/changelog/3.0.0#nail_care-polish" class="hash-link" aria-label="Direct link to 💅 Polish" title="Direct link to 💅 Polish">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="nail_care-polish">💅 Polish<a href="https://thebestornothing.github.io/changelog/3.0.0#nail_care-polish" class="hash-link" aria-label="Direct link to 💅 Polish" title="Direct link to 💅 Polish">​</a></h2>
 <ul>
 <li><code>docusaurus-theme-classic</code>
 <ul>
@@ -364,7 +364,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="memo-documentation">📝 Documentation<a href="https://vulnsystem.github.io/changelog/3.0.0#memo-documentation" class="hash-link" aria-label="Direct link to 📝 Documentation" title="Direct link to 📝 Documentation">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="memo-documentation">📝 Documentation<a href="https://thebestornothing.github.io/changelog/3.0.0#memo-documentation" class="hash-link" aria-label="Direct link to 📝 Documentation" title="Direct link to 📝 Documentation">​</a></h2>
 <ul>
 <li>Other
 <ul>
@@ -482,7 +482,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="robot-dependencies">🤖 Dependencies<a href="https://vulnsystem.github.io/changelog/3.0.0#robot-dependencies" class="hash-link" aria-label="Direct link to 🤖 Dependencies" title="Direct link to 🤖 Dependencies">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="robot-dependencies">🤖 Dependencies<a href="https://thebestornothing.github.io/changelog/3.0.0#robot-dependencies" class="hash-link" aria-label="Direct link to 🤖 Dependencies" title="Direct link to 🤖 Dependencies">​</a></h2>
 <ul>
 <li>Other
 <ul>
@@ -607,7 +607,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="wrench-maintenance">🔧 Maintenance<a href="https://vulnsystem.github.io/changelog/3.0.0#wrench-maintenance" class="hash-link" aria-label="Direct link to 🔧 Maintenance" title="Direct link to 🔧 Maintenance">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="wrench-maintenance">🔧 Maintenance<a href="https://thebestornothing.github.io/changelog/3.0.0#wrench-maintenance" class="hash-link" aria-label="Direct link to 🔧 Maintenance" title="Direct link to 🔧 Maintenance">​</a></h2>
 <ul>
 <li><code>docusaurus-migrate</code>
 <ul>
@@ -653,7 +653,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-132">Committers: 132<a href="https://vulnsystem.github.io/changelog/3.0.0#committers-132" class="hash-link" aria-label="Direct link to Committers: 132" title="Direct link to Committers: 132">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-132">Committers: 132<a href="https://thebestornothing.github.io/changelog/3.0.0#committers-132" class="hash-link" aria-label="Direct link to Committers: 132" title="Direct link to Committers: 132">​</a></h2>
 <ul>
 <li>0x24Karthick (<a href="https://github.com/KarthickSakthi" target="_blank" rel="noopener noreferrer">@KarthickSakthi</a>)</li>
 <li>Abhinandan Wadhwa (<a href="https://github.com/abhinandanwadwa" target="_blank" rel="noopener noreferrer">@abhinandanwadwa</a>)</li>
@@ -1319,11 +1319,11 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[2.4.3]]></title>
-        <id>https://vulnsystem.github.io/changelog/2.4.3</id>
-        <link href="https://vulnsystem.github.io/changelog/2.4.3"/>
+        <id>https://thebestornothing.github.io/changelog/2.4.3</id>
+        <link href="https://thebestornothing.github.io/changelog/2.4.3"/>
         <updated>2023-09-20T20:00:00.000Z</updated>
         <summary type="html"><![CDATA[Bug Fix]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://vulnsystem.github.io/changelog/2.4.3#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://thebestornothing.github.io/changelog/2.4.3#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
 <ul>
 <li><code>docusaurus-plugin-content-docs</code>
 <ul>
@@ -1343,7 +1343,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-4">Committers: 4<a href="https://vulnsystem.github.io/changelog/2.4.3#committers-4" class="hash-link" aria-label="Direct link to Committers: 4" title="Direct link to Committers: 4">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-4">Committers: 4<a href="https://thebestornothing.github.io/changelog/2.4.3#committers-4" class="hash-link" aria-label="Direct link to Committers: 4" title="Direct link to Committers: 4">​</a></h2>
 <ul>
 <li>Mikey O'Toole (<a href="https://github.com/homotechsual" target="_blank" rel="noopener noreferrer">@homotechsual</a>)</li>
 <li>Ori Shalom (<a href="https://github.com/ori-shalom" target="_blank" rel="noopener noreferrer">@ori-shalom</a>)</li>
@@ -1369,19 +1369,19 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[2.4.2]]></title>
-        <id>https://vulnsystem.github.io/changelog/2.4.2</id>
-        <link href="https://vulnsystem.github.io/changelog/2.4.2"/>
+        <id>https://thebestornothing.github.io/changelog/2.4.2</id>
+        <link href="https://thebestornothing.github.io/changelog/2.4.2"/>
         <updated>2023-09-20T19:00:00.000Z</updated>
         <summary type="html"><![CDATA[Bad npm publish, please use 2.4.3]]></summary>
         <content type="html"><![CDATA[<p>Bad npm publish, please use 2.4.3</p>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[2.4.1]]></title>
-        <id>https://vulnsystem.github.io/changelog/2.4.1</id>
-        <link href="https://vulnsystem.github.io/changelog/2.4.1"/>
+        <id>https://thebestornothing.github.io/changelog/2.4.1</id>
+        <link href="https://thebestornothing.github.io/changelog/2.4.1"/>
         <updated>2023-05-15T20:00:00.000Z</updated>
         <summary type="html"><![CDATA[Bug Fix]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://vulnsystem.github.io/changelog/2.4.1#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://thebestornothing.github.io/changelog/2.4.1#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
 <ul>
 <li><code>docusaurus-theme-classic</code>, <code>docusaurus-theme-common</code>
 <ul>
@@ -1425,7 +1425,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="nail_care-polish">💅 Polish<a href="https://vulnsystem.github.io/changelog/2.4.1#nail_care-polish" class="hash-link" aria-label="Direct link to 💅 Polish" title="Direct link to 💅 Polish">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="nail_care-polish">💅 Polish<a href="https://thebestornothing.github.io/changelog/2.4.1#nail_care-polish" class="hash-link" aria-label="Direct link to 💅 Polish" title="Direct link to 💅 Polish">​</a></h2>
 <ul>
 <li><code>docusaurus-theme-classic</code>
 <ul>
@@ -1433,7 +1433,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-7">Committers: 7<a href="https://vulnsystem.github.io/changelog/2.4.1#committers-7" class="hash-link" aria-label="Direct link to Committers: 7" title="Direct link to Committers: 7">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-7">Committers: 7<a href="https://thebestornothing.github.io/changelog/2.4.1#committers-7" class="hash-link" aria-label="Direct link to Committers: 7" title="Direct link to Committers: 7">​</a></h2>
 <ul>
 <li>Aleksandr Vladykin (<a href="https://github.com/morsko1" target="_blank" rel="noopener noreferrer">@morsko1</a>)</li>
 <li>Andrew Lyons (<a href="https://github.com/andrewnicols" target="_blank" rel="noopener noreferrer">@andrewnicols</a>)</li>
@@ -1474,11 +1474,11 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[2.4.0]]></title>
-        <id>https://vulnsystem.github.io/changelog/2.4.0</id>
-        <link href="https://vulnsystem.github.io/changelog/2.4.0"/>
+        <id>https://thebestornothing.github.io/changelog/2.4.0</id>
+        <link href="https://thebestornothing.github.io/changelog/2.4.0"/>
         <updated>2023-03-23T20:00:00.000Z</updated>
         <summary type="html"><![CDATA[New Feature]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="rocket-new-feature">🚀 New Feature<a href="https://vulnsystem.github.io/changelog/2.4.0#rocket-new-feature" class="hash-link" aria-label="Direct link to 🚀 New Feature" title="Direct link to 🚀 New Feature">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="rocket-new-feature">🚀 New Feature<a href="https://thebestornothing.github.io/changelog/2.4.0#rocket-new-feature" class="hash-link" aria-label="Direct link to 🚀 New Feature" title="Direct link to 🚀 New Feature">​</a></h2>
 <ul>
 <li><code>docusaurus-plugin-content-docs</code>, <code>docusaurus-theme-classic</code>
 <ul>
@@ -1523,7 +1523,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://vulnsystem.github.io/changelog/2.4.0#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://thebestornothing.github.io/changelog/2.4.0#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
 <ul>
 <li><code>docusaurus-theme-classic</code>
 <ul>
@@ -1553,7 +1553,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="nail_care-polish">💅 Polish<a href="https://vulnsystem.github.io/changelog/2.4.0#nail_care-polish" class="hash-link" aria-label="Direct link to 💅 Polish" title="Direct link to 💅 Polish">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="nail_care-polish">💅 Polish<a href="https://thebestornothing.github.io/changelog/2.4.0#nail_care-polish" class="hash-link" aria-label="Direct link to 💅 Polish" title="Direct link to 💅 Polish">​</a></h2>
 <ul>
 <li><code>create-docusaurus</code>
 <ul>
@@ -1571,7 +1571,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-14">Committers: 14<a href="https://vulnsystem.github.io/changelog/2.4.0#committers-14" class="hash-link" aria-label="Direct link to Committers: 14" title="Direct link to Committers: 14">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-14">Committers: 14<a href="https://thebestornothing.github.io/changelog/2.4.0#committers-14" class="hash-link" aria-label="Direct link to Committers: 14" title="Direct link to Committers: 14">​</a></h2>
 <ul>
 <li>Anas (<a href="https://github.com/Anasqx" target="_blank" rel="noopener noreferrer">@Anasqx</a>)</li>
 <li>Armano (<a href="https://github.com/armano2" target="_blank" rel="noopener noreferrer">@armano2</a>)</li>
@@ -1647,11 +1647,11 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[2.3.1]]></title>
-        <id>https://vulnsystem.github.io/changelog/2.3.1</id>
-        <link href="https://vulnsystem.github.io/changelog/2.3.1"/>
+        <id>https://thebestornothing.github.io/changelog/2.3.1</id>
+        <link href="https://thebestornothing.github.io/changelog/2.3.1"/>
         <updated>2023-02-03T20:00:00.000Z</updated>
         <summary type="html"><![CDATA[Bug Fix]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://vulnsystem.github.io/changelog/2.3.1#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://thebestornothing.github.io/changelog/2.3.1#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
 <ul>
 <li><code>docusaurus-theme-common</code>
 <ul>
@@ -1676,7 +1676,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="nail_care-polish">💅 Polish<a href="https://vulnsystem.github.io/changelog/2.3.1#nail_care-polish" class="hash-link" aria-label="Direct link to 💅 Polish" title="Direct link to 💅 Polish">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="nail_care-polish">💅 Polish<a href="https://thebestornothing.github.io/changelog/2.3.1#nail_care-polish" class="hash-link" aria-label="Direct link to 💅 Polish" title="Direct link to 💅 Polish">​</a></h2>
 <ul>
 <li><code>docusaurus-theme-translations</code>
 <ul>
@@ -1684,7 +1684,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="robot-dependencies">🤖 Dependencies<a href="https://vulnsystem.github.io/changelog/2.3.1#robot-dependencies" class="hash-link" aria-label="Direct link to 🤖 Dependencies" title="Direct link to 🤖 Dependencies">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="robot-dependencies">🤖 Dependencies<a href="https://thebestornothing.github.io/changelog/2.3.1#robot-dependencies" class="hash-link" aria-label="Direct link to 🤖 Dependencies" title="Direct link to 🤖 Dependencies">​</a></h2>
 <ul>
 <li><code>docusaurus-plugin-client-redirects</code>, <code>docusaurus-theme-search-algolia</code>, <code>docusaurus</code>
 <ul>
@@ -1692,7 +1692,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-3">Committers: 3<a href="https://vulnsystem.github.io/changelog/2.3.1#committers-3" class="hash-link" aria-label="Direct link to Committers: 3" title="Direct link to Committers: 3">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-3">Committers: 3<a href="https://thebestornothing.github.io/changelog/2.3.1#committers-3" class="hash-link" aria-label="Direct link to Committers: 3" title="Direct link to Committers: 3">​</a></h2>
 <ul>
 <li>Joshua Chen (<a href="https://github.com/Josh-Cena" target="_blank" rel="noopener noreferrer">@Josh-Cena</a>)</li>
 <li>Sébastien Castiel (<a href="https://github.com/scastiel" target="_blank" rel="noopener noreferrer">@scastiel</a>)</li>
@@ -1713,11 +1713,11 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[2.3.0]]></title>
-        <id>https://vulnsystem.github.io/changelog/2.3.0</id>
-        <link href="https://vulnsystem.github.io/changelog/2.3.0"/>
+        <id>https://thebestornothing.github.io/changelog/2.3.0</id>
+        <link href="https://thebestornothing.github.io/changelog/2.3.0"/>
         <updated>2023-01-26T20:00:00.000Z</updated>
         <summary type="html"><![CDATA[New Feature]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="rocket-new-feature">🚀 New Feature<a href="https://vulnsystem.github.io/changelog/2.3.0#rocket-new-feature" class="hash-link" aria-label="Direct link to 🚀 New Feature" title="Direct link to 🚀 New Feature">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="rocket-new-feature">🚀 New Feature<a href="https://thebestornothing.github.io/changelog/2.3.0#rocket-new-feature" class="hash-link" aria-label="Direct link to 🚀 New Feature" title="Direct link to 🚀 New Feature">​</a></h2>
 <ul>
 <li><code>docusaurus-theme-translations</code>
 <ul>
@@ -1750,7 +1750,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://vulnsystem.github.io/changelog/2.3.0#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://thebestornothing.github.io/changelog/2.3.0#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
 <ul>
 <li><code>docusaurus-mdx-loader</code>
 <ul>
@@ -1822,7 +1822,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="nail_care-polish">💅 Polish<a href="https://vulnsystem.github.io/changelog/2.3.0#nail_care-polish" class="hash-link" aria-label="Direct link to 💅 Polish" title="Direct link to 💅 Polish">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="nail_care-polish">💅 Polish<a href="https://thebestornothing.github.io/changelog/2.3.0#nail_care-polish" class="hash-link" aria-label="Direct link to 💅 Polish" title="Direct link to 💅 Polish">​</a></h2>
 <ul>
 <li><code>docusaurus-theme-classic</code>, <code>docusaurus</code>
 <ul>
@@ -1841,7 +1841,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-16">Committers: 16<a href="https://vulnsystem.github.io/changelog/2.3.0#committers-16" class="hash-link" aria-label="Direct link to Committers: 16" title="Direct link to Committers: 16">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-16">Committers: 16<a href="https://thebestornothing.github.io/changelog/2.3.0#committers-16" class="hash-link" aria-label="Direct link to Committers: 16" title="Direct link to Committers: 16">​</a></h2>
 <ul>
 <li>Danny Kim (<a href="https://github.com/0916dhkim" target="_blank" rel="noopener noreferrer">@0916dhkim</a>)</li>
 <li>Denis Al-Khelali (<a href="https://github.com/denis-alkhelali" target="_blank" rel="noopener noreferrer">@denis-alkhelali</a>)</li>
@@ -1932,11 +1932,11 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[2.2.0]]></title>
-        <id>https://vulnsystem.github.io/changelog/2.2.0</id>
-        <link href="https://vulnsystem.github.io/changelog/2.2.0"/>
+        <id>https://thebestornothing.github.io/changelog/2.2.0</id>
+        <link href="https://thebestornothing.github.io/changelog/2.2.0"/>
         <updated>2022-10-29T20:00:00.000Z</updated>
         <summary type="html"><![CDATA[New Feature]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="rocket-new-feature">🚀 New Feature<a href="https://vulnsystem.github.io/changelog/2.2.0#rocket-new-feature" class="hash-link" aria-label="Direct link to 🚀 New Feature" title="Direct link to 🚀 New Feature">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="rocket-new-feature">🚀 New Feature<a href="https://thebestornothing.github.io/changelog/2.2.0#rocket-new-feature" class="hash-link" aria-label="Direct link to 🚀 New Feature" title="Direct link to 🚀 New Feature">​</a></h2>
 <ul>
 <li><code>docusaurus-plugin-client-redirects</code>
 <ul>
@@ -1959,7 +1959,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://vulnsystem.github.io/changelog/2.2.0#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://thebestornothing.github.io/changelog/2.2.0#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
 <ul>
 <li><code>docusaurus-plugin-ideal-image</code>
 <ul>
@@ -2018,7 +2018,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="nail_care-polish">💅 Polish<a href="https://vulnsystem.github.io/changelog/2.2.0#nail_care-polish" class="hash-link" aria-label="Direct link to 💅 Polish" title="Direct link to 💅 Polish">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="nail_care-polish">💅 Polish<a href="https://thebestornothing.github.io/changelog/2.2.0#nail_care-polish" class="hash-link" aria-label="Direct link to 💅 Polish" title="Direct link to 💅 Polish">​</a></h2>
 <ul>
 <li><code>docusaurus-theme-translations</code>
 <ul>
@@ -2045,7 +2045,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-22">Committers: 22<a href="https://vulnsystem.github.io/changelog/2.2.0#committers-22" class="hash-link" aria-label="Direct link to Committers: 22" title="Direct link to Committers: 22">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-22">Committers: 22<a href="https://thebestornothing.github.io/changelog/2.2.0#committers-22" class="hash-link" aria-label="Direct link to Committers: 22" title="Direct link to Committers: 22">​</a></h2>
 <ul>
 <li>Adnan Hashmi (<a href="https://github.com/adnanhashmi09" target="_blank" rel="noopener noreferrer">@adnanhashmi09</a>)</li>
 <li>Alexey Pyltsyn (<a href="https://github.com/lex111" target="_blank" rel="noopener noreferrer">@lex111</a>)</li>
@@ -2161,11 +2161,11 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[2.1.0]]></title>
-        <id>https://vulnsystem.github.io/changelog/2.1.0</id>
-        <link href="https://vulnsystem.github.io/changelog/2.1.0"/>
+        <id>https://thebestornothing.github.io/changelog/2.1.0</id>
+        <link href="https://thebestornothing.github.io/changelog/2.1.0"/>
         <updated>2022-09-01T20:00:00.000Z</updated>
         <summary type="html"><![CDATA[New Feature]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="rocket-new-feature">🚀 New Feature<a href="https://vulnsystem.github.io/changelog/2.1.0#rocket-new-feature" class="hash-link" aria-label="Direct link to 🚀 New Feature" title="Direct link to 🚀 New Feature">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="rocket-new-feature">🚀 New Feature<a href="https://thebestornothing.github.io/changelog/2.1.0#rocket-new-feature" class="hash-link" aria-label="Direct link to 🚀 New Feature" title="Direct link to 🚀 New Feature">​</a></h2>
 <ul>
 <li><code>docusaurus-theme-classic</code>, <code>docusaurus-theme-common</code>
 <ul>
@@ -2184,7 +2184,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://vulnsystem.github.io/changelog/2.1.0#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://thebestornothing.github.io/changelog/2.1.0#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
 <ul>
 <li><code>create-docusaurus</code>
 <ul>
@@ -2215,7 +2215,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="nail_care-polish">💅 Polish<a href="https://vulnsystem.github.io/changelog/2.1.0#nail_care-polish" class="hash-link" aria-label="Direct link to 💅 Polish" title="Direct link to 💅 Polish">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="nail_care-polish">💅 Polish<a href="https://thebestornothing.github.io/changelog/2.1.0#nail_care-polish" class="hash-link" aria-label="Direct link to 💅 Polish" title="Direct link to 💅 Polish">​</a></h2>
 <ul>
 <li><code>docusaurus-theme-classic</code>
 <ul>
@@ -2240,7 +2240,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="memo-documentation">📝 Documentation<a href="https://vulnsystem.github.io/changelog/2.1.0#memo-documentation" class="hash-link" aria-label="Direct link to 📝 Documentation" title="Direct link to 📝 Documentation">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="memo-documentation">📝 Documentation<a href="https://thebestornothing.github.io/changelog/2.1.0#memo-documentation" class="hash-link" aria-label="Direct link to 📝 Documentation" title="Direct link to 📝 Documentation">​</a></h2>
 <ul>
 <li><code>create-docusaurus</code>
 <ul>
@@ -2253,7 +2253,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-10">Committers: 10<a href="https://vulnsystem.github.io/changelog/2.1.0#committers-10" class="hash-link" aria-label="Direct link to Committers: 10" title="Direct link to Committers: 10">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-10">Committers: 10<a href="https://thebestornothing.github.io/changelog/2.1.0#committers-10" class="hash-link" aria-label="Direct link to Committers: 10" title="Direct link to Committers: 10">​</a></h2>
 <ul>
 <li>Bagdasar Ovsepyan (<a href="https://github.com/b-ovsepian" target="_blank" rel="noopener noreferrer">@b-ovsepian</a>)</li>
 <li>Joshua Chen (<a href="https://github.com/Josh-Cena" target="_blank" rel="noopener noreferrer">@Josh-Cena</a>)</li>
@@ -2309,12 +2309,12 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[2.0.1]]></title>
-        <id>https://vulnsystem.github.io/changelog/2.0.1</id>
-        <link href="https://vulnsystem.github.io/changelog/2.0.1"/>
+        <id>https://thebestornothing.github.io/changelog/2.0.1</id>
+        <link href="https://thebestornothing.github.io/changelog/2.0.1"/>
         <updated>2022-08-01T20:00:00.000Z</updated>
         <summary type="html"><![CDATA[Fix bad npm publish of 2.0.0]]></summary>
         <content type="html"><![CDATA[<p>Fix bad npm publish of 2.0.0</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-1">Committers: 1<a href="https://vulnsystem.github.io/changelog/2.0.1#committers-1" class="hash-link" aria-label="Direct link to Committers: 1" title="Direct link to Committers: 1">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-1">Committers: 1<a href="https://thebestornothing.github.io/changelog/2.0.1#committers-1" class="hash-link" aria-label="Direct link to Committers: 1" title="Direct link to Committers: 1">​</a></h2>
 <ul>
 <li>Sébastien Lorber (<a href="https://github.com/slorber" target="_blank" rel="noopener noreferrer">@slorber</a>)</li>
 </ul>]]></content>
@@ -2325,12 +2325,12 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[2.0.0]]></title>
-        <id>https://vulnsystem.github.io/changelog/2.0.0</id>
-        <link href="https://vulnsystem.github.io/changelog/2.0.0"/>
+        <id>https://thebestornothing.github.io/changelog/2.0.0</id>
+        <link href="https://thebestornothing.github.io/changelog/2.0.0"/>
         <updated>2022-08-01T19:00:00.000Z</updated>
         <summary type="html"><![CDATA[Bad npm publish, please use 2.0.1]]></summary>
         <content type="html"><![CDATA[<p>Bad npm publish, please use 2.0.1</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="nail_care-polish">💅 Polish<a href="https://vulnsystem.github.io/changelog/2.0.0#nail_care-polish" class="hash-link" aria-label="Direct link to 💅 Polish" title="Direct link to 💅 Polish">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="nail_care-polish">💅 Polish<a href="https://thebestornothing.github.io/changelog/2.0.0#nail_care-polish" class="hash-link" aria-label="Direct link to 💅 Polish" title="Direct link to 💅 Polish">​</a></h2>
 <ul>
 <li><code>docusaurus</code>
 <ul>
@@ -2338,7 +2338,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-2">Committers: 2<a href="https://vulnsystem.github.io/changelog/2.0.0#committers-2" class="hash-link" aria-label="Direct link to Committers: 2" title="Direct link to Committers: 2">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-2">Committers: 2<a href="https://thebestornothing.github.io/changelog/2.0.0#committers-2" class="hash-link" aria-label="Direct link to Committers: 2" title="Direct link to Committers: 2">​</a></h2>
 <ul>
 <li>Joshua Chen (<a href="https://github.com/Josh-Cena" target="_blank" rel="noopener noreferrer">@Josh-Cena</a>)</li>
 <li>Sébastien Lorber (<a href="https://github.com/slorber" target="_blank" rel="noopener noreferrer">@slorber</a>)</li>
@@ -2354,11 +2354,11 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[2.0.0-rc.1]]></title>
-        <id>https://vulnsystem.github.io/changelog/2.0.0-rc.1</id>
-        <link href="https://vulnsystem.github.io/changelog/2.0.0-rc.1"/>
+        <id>https://thebestornothing.github.io/changelog/2.0.0-rc.1</id>
+        <link href="https://thebestornothing.github.io/changelog/2.0.0-rc.1"/>
         <updated>2022-07-14T20:00:00.000Z</updated>
         <summary type="html"><![CDATA[Bug Fix]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://vulnsystem.github.io/changelog/2.0.0-rc.1#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://thebestornothing.github.io/changelog/2.0.0-rc.1#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
 <ul>
 <li><code>docusaurus</code>
 <ul>
@@ -2389,7 +2389,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="nail_care-polish">💅 Polish<a href="https://vulnsystem.github.io/changelog/2.0.0-rc.1#nail_care-polish" class="hash-link" aria-label="Direct link to 💅 Polish" title="Direct link to 💅 Polish">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="nail_care-polish">💅 Polish<a href="https://thebestornothing.github.io/changelog/2.0.0-rc.1#nail_care-polish" class="hash-link" aria-label="Direct link to 💅 Polish" title="Direct link to 💅 Polish">​</a></h2>
 <ul>
 <li><code>docusaurus-theme-translations</code>
 <ul>
@@ -2397,7 +2397,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="memo-documentation">📝 Documentation<a href="https://vulnsystem.github.io/changelog/2.0.0-rc.1#memo-documentation" class="hash-link" aria-label="Direct link to 📝 Documentation" title="Direct link to 📝 Documentation">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="memo-documentation">📝 Documentation<a href="https://thebestornothing.github.io/changelog/2.0.0-rc.1#memo-documentation" class="hash-link" aria-label="Direct link to 📝 Documentation" title="Direct link to 📝 Documentation">​</a></h2>
 <ul>
 <li><code>docusaurus-plugin-content-docs</code>
 <ul>
@@ -2405,7 +2405,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="wrench-maintenance">🔧 Maintenance<a href="https://vulnsystem.github.io/changelog/2.0.0-rc.1#wrench-maintenance" class="hash-link" aria-label="Direct link to 🔧 Maintenance" title="Direct link to 🔧 Maintenance">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="wrench-maintenance">🔧 Maintenance<a href="https://thebestornothing.github.io/changelog/2.0.0-rc.1#wrench-maintenance" class="hash-link" aria-label="Direct link to 🔧 Maintenance" title="Direct link to 🔧 Maintenance">​</a></h2>
 <ul>
 <li><code>docusaurus-theme-classic</code>
 <ul>
@@ -2414,7 +2414,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-11">Committers: 11<a href="https://vulnsystem.github.io/changelog/2.0.0-rc.1#committers-11" class="hash-link" aria-label="Direct link to Committers: 11" title="Direct link to Committers: 11">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-11">Committers: 11<a href="https://thebestornothing.github.io/changelog/2.0.0-rc.1#committers-11" class="hash-link" aria-label="Direct link to Committers: 11" title="Direct link to Committers: 11">​</a></h2>
 <ul>
 <li>Arthur Brugière (<a href="https://github.com/RoiArthurB" target="_blank" rel="noopener noreferrer">@RoiArthurB</a>)</li>
 <li>Bruce Song (<a href="https://github.com/recallwei" target="_blank" rel="noopener noreferrer">@recallwei</a>)</li>
@@ -2475,11 +2475,11 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[2.0.0-beta.22]]></title>
-        <id>https://vulnsystem.github.io/changelog/2.0.0-beta.22</id>
-        <link href="https://vulnsystem.github.io/changelog/2.0.0-beta.22"/>
+        <id>https://thebestornothing.github.io/changelog/2.0.0-beta.22</id>
+        <link href="https://thebestornothing.github.io/changelog/2.0.0-beta.22"/>
         <updated>2022-07-08T20:00:00.000Z</updated>
         <summary type="html"><![CDATA[Breaking Change]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="boom-breaking-change">💥 Breaking Change<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.22#boom-breaking-change" class="hash-link" aria-label="Direct link to 💥 Breaking Change" title="Direct link to 💥 Breaking Change">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="boom-breaking-change">💥 Breaking Change<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.22#boom-breaking-change" class="hash-link" aria-label="Direct link to 💥 Breaking Change" title="Direct link to 💥 Breaking Change">​</a></h2>
 <ul>
 <li><code>docusaurus-theme-classic</code>
 <ul>
@@ -2512,7 +2512,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="rocket-new-feature">🚀 New Feature<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.22#rocket-new-feature" class="hash-link" aria-label="Direct link to 🚀 New Feature" title="Direct link to 🚀 New Feature">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="rocket-new-feature">🚀 New Feature<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.22#rocket-new-feature" class="hash-link" aria-label="Direct link to 🚀 New Feature" title="Direct link to 🚀 New Feature">​</a></h2>
 <ul>
 <li><code>docusaurus-theme-translations</code>
 <ul>
@@ -2571,7 +2571,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.22#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.22#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
 <ul>
 <li><code>docusaurus-theme-classic</code>
 <ul>
@@ -2613,7 +2613,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="nail_care-polish">💅 Polish<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.22#nail_care-polish" class="hash-link" aria-label="Direct link to 💅 Polish" title="Direct link to 💅 Polish">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="nail_care-polish">💅 Polish<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.22#nail_care-polish" class="hash-link" aria-label="Direct link to 💅 Polish" title="Direct link to 💅 Polish">​</a></h2>
 <ul>
 <li><code>docusaurus-theme-translations</code>
 <ul>
@@ -2661,7 +2661,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="memo-documentation">📝 Documentation<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.22#memo-documentation" class="hash-link" aria-label="Direct link to 📝 Documentation" title="Direct link to 📝 Documentation">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="memo-documentation">📝 Documentation<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.22#memo-documentation" class="hash-link" aria-label="Direct link to 📝 Documentation" title="Direct link to 📝 Documentation">​</a></h2>
 <ul>
 <li>Other
 <ul>
@@ -2689,7 +2689,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="wrench-maintenance">🔧 Maintenance<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.22#wrench-maintenance" class="hash-link" aria-label="Direct link to 🔧 Maintenance" title="Direct link to 🔧 Maintenance">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="wrench-maintenance">🔧 Maintenance<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.22#wrench-maintenance" class="hash-link" aria-label="Direct link to 🔧 Maintenance" title="Direct link to 🔧 Maintenance">​</a></h2>
 <ul>
 <li><code>docusaurus-theme-classic</code>, <code>docusaurus-theme-common</code>
 <ul>
@@ -2719,7 +2719,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-51">Committers: 51<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.22#committers-51" class="hash-link" aria-label="Direct link to Committers: 51" title="Direct link to Committers: 51">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-51">Committers: 51<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.22#committers-51" class="hash-link" aria-label="Direct link to Committers: 51" title="Direct link to Committers: 51">​</a></h2>
 <ul>
 <li>7Wate (<a href="https://github.com/7Wate" target="_blank" rel="noopener noreferrer">@7Wate</a>)</li>
 <li>Ahmed Altomy (<a href="https://github.com/Altomy" target="_blank" rel="noopener noreferrer">@Altomy</a>)</li>
@@ -2980,11 +2980,11 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[2.0.0-beta.21]]></title>
-        <id>https://vulnsystem.github.io/changelog/2.0.0-beta.21</id>
-        <link href="https://vulnsystem.github.io/changelog/2.0.0-beta.21"/>
+        <id>https://thebestornothing.github.io/changelog/2.0.0-beta.21</id>
+        <link href="https://thebestornothing.github.io/changelog/2.0.0-beta.21"/>
         <updated>2022-05-27T20:00:00.000Z</updated>
         <summary type="html"><![CDATA[Breaking Change]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="boom-breaking-change">💥 Breaking Change<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.21#boom-breaking-change" class="hash-link" aria-label="Direct link to 💥 Breaking Change" title="Direct link to 💥 Breaking Change">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="boom-breaking-change">💥 Breaking Change<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.21#boom-breaking-change" class="hash-link" aria-label="Direct link to 💥 Breaking Change" title="Direct link to 💥 Breaking Change">​</a></h2>
 <ul>
 <li><code>docusaurus-plugin-pwa</code>
 <ul>
@@ -2997,7 +2997,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="rocket-new-feature">🚀 New Feature<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.21#rocket-new-feature" class="hash-link" aria-label="Direct link to 🚀 New Feature" title="Direct link to 🚀 New Feature">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="rocket-new-feature">🚀 New Feature<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.21#rocket-new-feature" class="hash-link" aria-label="Direct link to 🚀 New Feature" title="Direct link to 🚀 New Feature">​</a></h2>
 <ul>
 <li><code>docusaurus-plugin-sitemap</code>
 <ul>
@@ -3021,7 +3021,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.21#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.21#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
 <ul>
 <li><code>docusaurus</code>
 <ul>
@@ -3071,7 +3071,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="nail_care-polish">💅 Polish<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.21#nail_care-polish" class="hash-link" aria-label="Direct link to 💅 Polish" title="Direct link to 💅 Polish">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="nail_care-polish">💅 Polish<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.21#nail_care-polish" class="hash-link" aria-label="Direct link to 💅 Polish" title="Direct link to 💅 Polish">​</a></h2>
 <ul>
 <li><code>docusaurus-theme-translations</code>
 <ul>
@@ -3091,14 +3091,14 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="memo-documentation">📝 Documentation<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.21#memo-documentation" class="hash-link" aria-label="Direct link to 📝 Documentation" title="Direct link to 📝 Documentation">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="memo-documentation">📝 Documentation<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.21#memo-documentation" class="hash-link" aria-label="Direct link to 📝 Documentation" title="Direct link to 📝 Documentation">​</a></h2>
 <ul>
 <li><a href="https://github.com/facebook/docusaurus/pull/7503" target="_blank" rel="noopener noreferrer">#7503</a> docs: document MDXComponents scope (<a href="https://github.com/Josh-Cena" target="_blank" rel="noopener noreferrer">@Josh-Cena</a>)</li>
 <li><a href="https://github.com/facebook/docusaurus/pull/7497" target="_blank" rel="noopener noreferrer">#7497</a> docs: link every reference of types in API table to the type definition (<a href="https://github.com/Zamiell" target="_blank" rel="noopener noreferrer">@Zamiell</a>)</li>
 <li><a href="https://github.com/facebook/docusaurus/pull/7407" target="_blank" rel="noopener noreferrer">#7407</a> docs: add Azure SWA as deployment option (<a href="https://github.com/nitya" target="_blank" rel="noopener noreferrer">@nitya</a>)</li>
 <li><a href="https://github.com/facebook/docusaurus/pull/7390" target="_blank" rel="noopener noreferrer">#7390</a> fix(website): use react-lite-youtube-embed for lazy YouTube video (<a href="https://github.com/matkoch" target="_blank" rel="noopener noreferrer">@matkoch</a>)</li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="wrench-maintenance">🔧 Maintenance<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.21#wrench-maintenance" class="hash-link" aria-label="Direct link to 🔧 Maintenance" title="Direct link to 🔧 Maintenance">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="wrench-maintenance">🔧 Maintenance<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.21#wrench-maintenance" class="hash-link" aria-label="Direct link to 🔧 Maintenance" title="Direct link to 🔧 Maintenance">​</a></h2>
 <ul>
 <li><code>create-docusaurus</code>, <code>docusaurus-logger</code>, <code>docusaurus-mdx-loader</code>, <code>docusaurus-migrate</code>, <code>docusaurus-module-type-aliases</code>, <code>docusaurus-plugin-client-redirects</code>, <code>docusaurus-plugin-content-blog</code>, <code>docusaurus-plugin-content-docs</code>, <code>docusaurus-plugin-content-pages</code>, <code>docusaurus-plugin-debug</code>, <code>docusaurus-plugin-google-gtag</code>, <code>docusaurus-plugin-ideal-image</code>, <code>docusaurus-plugin-pwa</code>, <code>docusaurus-plugin-sitemap</code>, <code>docusaurus-remark-plugin-npm2yarn</code>, <code>docusaurus-theme-classic</code>, <code>docusaurus-theme-common</code>, <code>docusaurus-theme-live-codeblock</code>, <code>docusaurus-theme-search-algolia</code>, <code>docusaurus-theme-translations</code>, <code>docusaurus-utils-validation</code>, <code>docusaurus-utils</code>, <code>docusaurus</code>, <code>lqip-loader</code>, <code>stylelint-copyright</code>
 <ul>
@@ -3141,7 +3141,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-23">Committers: 23<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.21#committers-23" class="hash-link" aria-label="Direct link to Committers: 23" title="Direct link to Committers: 23">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-23">Committers: 23<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.21#committers-23" class="hash-link" aria-label="Direct link to Committers: 23" title="Direct link to Committers: 23">​</a></h2>
 <ul>
 <li>Akara (<a href="https://github.com/Messiahhh" target="_blank" rel="noopener noreferrer">@Messiahhh</a>)</li>
 <li>Benjamin Diolez (<a href="https://github.com/BenDz" target="_blank" rel="noopener noreferrer">@BenDz</a>)</li>
@@ -3262,11 +3262,11 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[2.0.0-beta.20]]></title>
-        <id>https://vulnsystem.github.io/changelog/2.0.0-beta.20</id>
-        <link href="https://vulnsystem.github.io/changelog/2.0.0-beta.20"/>
+        <id>https://thebestornothing.github.io/changelog/2.0.0-beta.20</id>
+        <link href="https://thebestornothing.github.io/changelog/2.0.0-beta.20"/>
         <updated>2022-05-05T20:00:00.000Z</updated>
         <summary type="html"><![CDATA[Bug Fix]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.20#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.20#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
 <ul>
 <li><code>docusaurus</code>
 <ul>
@@ -3280,7 +3280,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="memo-documentation">📝 Documentation<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.20#memo-documentation" class="hash-link" aria-label="Direct link to 📝 Documentation" title="Direct link to 📝 Documentation">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="memo-documentation">📝 Documentation<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.20#memo-documentation" class="hash-link" aria-label="Direct link to 📝 Documentation" title="Direct link to 📝 Documentation">​</a></h2>
 <ul>
 <li><a href="https://github.com/facebook/docusaurus/pull/7334" target="_blank" rel="noopener noreferrer">#7334</a> feat(website): make canary release page display actual canary version name (<a href="https://github.com/Josh-Cena" target="_blank" rel="noopener noreferrer">@Josh-Cena</a>)</li>
 <li><a href="https://github.com/facebook/docusaurus/pull/7343" target="_blank" rel="noopener noreferrer">#7343</a> docs: add page for create-docusaurus API documentation (<a href="https://github.com/Josh-Cena" target="_blank" rel="noopener noreferrer">@Josh-Cena</a>)</li>
@@ -3288,7 +3288,7 @@
 <li><a href="https://github.com/facebook/docusaurus/pull/7336" target="_blank" rel="noopener noreferrer">#7336</a> fix(website): fix multiple accessibility issues around color contrast (<a href="https://github.com/Josh-Cena" target="_blank" rel="noopener noreferrer">@Josh-Cena</a>)</li>
 <li><a href="https://github.com/facebook/docusaurus/pull/7327" target="_blank" rel="noopener noreferrer">#7327</a> docs: add clarity to versioning behavior (<a href="https://github.com/pepopowitz" target="_blank" rel="noopener noreferrer">@pepopowitz</a>)</li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-6">Committers: 6<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.20#committers-6" class="hash-link" aria-label="Direct link to Committers: 6" title="Direct link to Committers: 6">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-6">Committers: 6<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.20#committers-6" class="hash-link" aria-label="Direct link to Committers: 6" title="Direct link to Committers: 6">​</a></h2>
 <ul>
 <li>Alexey Pyltsyn (<a href="https://github.com/lex111" target="_blank" rel="noopener noreferrer">@lex111</a>)</li>
 <li>Joshua Chen (<a href="https://github.com/Josh-Cena" target="_blank" rel="noopener noreferrer">@Josh-Cena</a>)</li>
@@ -3324,11 +3324,11 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[2.0.0-beta.19]]></title>
-        <id>https://vulnsystem.github.io/changelog/2.0.0-beta.19</id>
-        <link href="https://vulnsystem.github.io/changelog/2.0.0-beta.19"/>
+        <id>https://thebestornothing.github.io/changelog/2.0.0-beta.19</id>
+        <link href="https://thebestornothing.github.io/changelog/2.0.0-beta.19"/>
         <updated>2022-05-04T20:00:00.000Z</updated>
         <summary type="html"><![CDATA[New Feature]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="rocket-new-feature">🚀 New Feature<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.19#rocket-new-feature" class="hash-link" aria-label="Direct link to 🚀 New Feature" title="Direct link to 🚀 New Feature">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="rocket-new-feature">🚀 New Feature<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.19#rocket-new-feature" class="hash-link" aria-label="Direct link to 🚀 New Feature" title="Direct link to 🚀 New Feature">​</a></h2>
 <ul>
 <li><code>docusaurus-theme-classic</code>, <code>docusaurus-theme-common</code>
 <ul>
@@ -3391,7 +3391,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="boom-breaking-change">💥 Breaking Change<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.19#boom-breaking-change" class="hash-link" aria-label="Direct link to 💥 Breaking Change" title="Direct link to 💥 Breaking Change">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="boom-breaking-change">💥 Breaking Change<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.19#boom-breaking-change" class="hash-link" aria-label="Direct link to 💥 Breaking Change" title="Direct link to 💥 Breaking Change">​</a></h2>
 <ul>
 <li><code>docusaurus-types</code>, <code>docusaurus</code>
 <ul>
@@ -3424,7 +3424,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.19#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.19#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
 <ul>
 <li><code>docusaurus-theme-classic</code>
 <ul>
@@ -3510,7 +3510,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="nail_care-polish">💅 Polish<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.19#nail_care-polish" class="hash-link" aria-label="Direct link to 💅 Polish" title="Direct link to 💅 Polish">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="nail_care-polish">💅 Polish<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.19#nail_care-polish" class="hash-link" aria-label="Direct link to 💅 Polish" title="Direct link to 💅 Polish">​</a></h2>
 <ul>
 <li><code>docusaurus-theme-classic</code>, <code>docusaurus-theme-translations</code>
 <ul>
@@ -3613,7 +3613,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="memo-documentation">📝 Documentation<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.19#memo-documentation" class="hash-link" aria-label="Direct link to 📝 Documentation" title="Direct link to 📝 Documentation">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="memo-documentation">📝 Documentation<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.19#memo-documentation" class="hash-link" aria-label="Direct link to 📝 Documentation" title="Direct link to 📝 Documentation">​</a></h2>
 <ul>
 <li><code>docusaurus-logger</code>
 <ul>
@@ -3658,7 +3658,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="wrench-maintenance">🔧 Maintenance<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.19#wrench-maintenance" class="hash-link" aria-label="Direct link to 🔧 Maintenance" title="Direct link to 🔧 Maintenance">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="wrench-maintenance">🔧 Maintenance<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.19#wrench-maintenance" class="hash-link" aria-label="Direct link to 🔧 Maintenance" title="Direct link to 🔧 Maintenance">​</a></h2>
 <ul>
 <li>Other
 <ul>
@@ -3767,7 +3767,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="running-performance">:running: Performance<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.19#running-performance" class="hash-link" aria-label="Direct link to :running: Performance" title="Direct link to :running: Performance">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="running-performance">:running: Performance<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.19#running-performance" class="hash-link" aria-label="Direct link to :running: Performance" title="Direct link to :running: Performance">​</a></h2>
 <ul>
 <li><code>docusaurus-plugin-content-docs</code>, <code>docusaurus-theme-classic</code>, <code>docusaurus-theme-common</code>, <code>docusaurus-theme-live-codeblock</code>, <code>docusaurus-theme-search-algolia</code>, <code>docusaurus-utils-common</code>
 <ul>
@@ -3780,7 +3780,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-47">Committers: 47<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.19#committers-47" class="hash-link" aria-label="Direct link to Committers: 47" title="Direct link to Committers: 47">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-47">Committers: 47<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.19#committers-47" class="hash-link" aria-label="Direct link to Committers: 47" title="Direct link to Committers: 47">​</a></h2>
 <ul>
 <li>Aaron Nwabuoku (<a href="https://github.com/aerovulpe" target="_blank" rel="noopener noreferrer">@aerovulpe</a>)</li>
 <li>AkiraVoid (<a href="https://github.com/AkiraVoid" target="_blank" rel="noopener noreferrer">@AkiraVoid</a>)</li>
@@ -4021,11 +4021,11 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[2.0.0-beta.18]]></title>
-        <id>https://vulnsystem.github.io/changelog/2.0.0-beta.18</id>
-        <link href="https://vulnsystem.github.io/changelog/2.0.0-beta.18"/>
+        <id>https://thebestornothing.github.io/changelog/2.0.0-beta.18</id>
+        <link href="https://thebestornothing.github.io/changelog/2.0.0-beta.18"/>
         <updated>2022-03-25T20:00:00.000Z</updated>
         <summary type="html"><![CDATA[New Feature]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="rocket-new-feature">🚀 New Feature<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.18#rocket-new-feature" class="hash-link" aria-label="Direct link to 🚀 New Feature" title="Direct link to 🚀 New Feature">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="rocket-new-feature">🚀 New Feature<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.18#rocket-new-feature" class="hash-link" aria-label="Direct link to 🚀 New Feature" title="Direct link to 🚀 New Feature">​</a></h2>
 <ul>
 <li><code>docusaurus-mdx-loader</code>, <code>docusaurus-theme-classic</code>
 <ul>
@@ -4054,7 +4054,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="boom-breaking-change">💥 Breaking Change<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.18#boom-breaking-change" class="hash-link" aria-label="Direct link to 💥 Breaking Change" title="Direct link to 💥 Breaking Change">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="boom-breaking-change">💥 Breaking Change<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.18#boom-breaking-change" class="hash-link" aria-label="Direct link to 💥 Breaking Change" title="Direct link to 💥 Breaking Change">​</a></h2>
 <ul>
 <li><code>docusaurus-plugin-content-docs</code>
 <ul>
@@ -4078,7 +4078,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.18#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.18#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
 <ul>
 <li><code>docusaurus</code>
 <ul>
@@ -4119,7 +4119,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="nail_care-polish">💅 Polish<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.18#nail_care-polish" class="hash-link" aria-label="Direct link to 💅 Polish" title="Direct link to 💅 Polish">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="nail_care-polish">💅 Polish<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.18#nail_care-polish" class="hash-link" aria-label="Direct link to 💅 Polish" title="Direct link to 💅 Polish">​</a></h2>
 <ul>
 <li><code>docusaurus-plugin-content-docs</code>
 <ul>
@@ -4216,7 +4216,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="memo-documentation">📝 Documentation<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.18#memo-documentation" class="hash-link" aria-label="Direct link to 📝 Documentation" title="Direct link to 📝 Documentation">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="memo-documentation">📝 Documentation<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.18#memo-documentation" class="hash-link" aria-label="Direct link to 📝 Documentation" title="Direct link to 📝 Documentation">​</a></h2>
 <ul>
 <li>Other
 <ul>
@@ -4251,7 +4251,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="house-internal">🏠 Internal<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.18#house-internal" class="hash-link" aria-label="Direct link to 🏠 Internal" title="Direct link to 🏠 Internal">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="house-internal">🏠 Internal<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.18#house-internal" class="hash-link" aria-label="Direct link to 🏠 Internal" title="Direct link to 🏠 Internal">​</a></h2>
 <ul>
 <li><code>create-docusaurus</code>, <code>docusaurus-mdx-loader</code>, <code>docusaurus-migrate</code>, <code>docusaurus-module-type-aliases</code>, <code>docusaurus-plugin-client-redirects</code>, <code>docusaurus-plugin-content-blog</code>, <code>docusaurus-plugin-content-docs</code>, <code>docusaurus-plugin-content-pages</code>, <code>docusaurus-plugin-debug</code>, <code>docusaurus-plugin-google-gtag</code>, <code>docusaurus-plugin-ideal-image</code>, <code>docusaurus-remark-plugin-npm2yarn</code>, <code>docusaurus-theme-classic</code>, <code>docusaurus-theme-common</code>, <code>docusaurus-theme-search-algolia</code>, <code>docusaurus-theme-translations</code>, <code>docusaurus-types</code>, <code>docusaurus-utils-validation</code>, <code>docusaurus-utils</code>, <code>docusaurus</code>, <code>lqip-loader</code>
 <ul>
@@ -4397,7 +4397,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-28">Committers: 28<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.18#committers-28" class="hash-link" aria-label="Direct link to Committers: 28" title="Direct link to Committers: 28">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-28">Committers: 28<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.18#committers-28" class="hash-link" aria-label="Direct link to Committers: 28" title="Direct link to Committers: 28">​</a></h2>
 <ul>
 <li>Afonso Jorge Ramos (<a href="https://github.com/afonsojramos" target="_blank" rel="noopener noreferrer">@afonsojramos</a>)</li>
 <li>Alessandro Festa (<a href="https://github.com/alefesta" target="_blank" rel="noopener noreferrer">@alefesta</a>)</li>
@@ -4543,11 +4543,11 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[2.0.0-beta.17]]></title>
-        <id>https://vulnsystem.github.io/changelog/2.0.0-beta.17</id>
-        <link href="https://vulnsystem.github.io/changelog/2.0.0-beta.17"/>
+        <id>https://thebestornothing.github.io/changelog/2.0.0-beta.17</id>
+        <link href="https://thebestornothing.github.io/changelog/2.0.0-beta.17"/>
         <updated>2022-03-03T20:00:00.000Z</updated>
         <summary type="html"><![CDATA[New Feature]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="rocket-new-feature">🚀 New Feature<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.17#rocket-new-feature" class="hash-link" aria-label="Direct link to 🚀 New Feature" title="Direct link to 🚀 New Feature">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="rocket-new-feature">🚀 New Feature<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.17#rocket-new-feature" class="hash-link" aria-label="Direct link to 🚀 New Feature" title="Direct link to 🚀 New Feature">​</a></h2>
 <ul>
 <li><code>docusaurus-plugin-content-blog</code>, <code>docusaurus-theme-classic</code>
 <ul>
@@ -4555,7 +4555,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="boom-breaking-change">💥 Breaking Change<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.17#boom-breaking-change" class="hash-link" aria-label="Direct link to 💥 Breaking Change" title="Direct link to 💥 Breaking Change">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="boom-breaking-change">💥 Breaking Change<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.17#boom-breaking-change" class="hash-link" aria-label="Direct link to 💥 Breaking Change" title="Direct link to 💥 Breaking Change">​</a></h2>
 <ul>
 <li><code>docusaurus-theme-classic</code>, <code>docusaurus-theme-common</code>
 <ul>
@@ -4563,7 +4563,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.17#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.17#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
 <ul>
 <li><code>docusaurus-theme-classic</code>
 <ul>
@@ -4598,7 +4598,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="nail_care-polish">💅 Polish<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.17#nail_care-polish" class="hash-link" aria-label="Direct link to 💅 Polish" title="Direct link to 💅 Polish">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="nail_care-polish">💅 Polish<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.17#nail_care-polish" class="hash-link" aria-label="Direct link to 💅 Polish" title="Direct link to 💅 Polish">​</a></h2>
 <ul>
 <li><code>docusaurus-theme-common</code>
 <ul>
@@ -4621,7 +4621,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="memo-documentation">📝 Documentation<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.17#memo-documentation" class="hash-link" aria-label="Direct link to 📝 Documentation" title="Direct link to 📝 Documentation">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="memo-documentation">📝 Documentation<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.17#memo-documentation" class="hash-link" aria-label="Direct link to 📝 Documentation" title="Direct link to 📝 Documentation">​</a></h2>
 <ul>
 <li>Other
 <ul>
@@ -4640,7 +4640,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="house-internal">🏠 Internal<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.17#house-internal" class="hash-link" aria-label="Direct link to 🏠 Internal" title="Direct link to 🏠 Internal">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="house-internal">🏠 Internal<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.17#house-internal" class="hash-link" aria-label="Direct link to 🏠 Internal" title="Direct link to 🏠 Internal">​</a></h2>
 <ul>
 <li><code>docusaurus-plugin-content-docs</code>
 <ul>
@@ -4663,7 +4663,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-8">Committers: 8<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.17#committers-8" class="hash-link" aria-label="Direct link to Committers: 8" title="Direct link to Committers: 8">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-8">Committers: 8<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.17#committers-8" class="hash-link" aria-label="Direct link to Committers: 8" title="Direct link to Committers: 8">​</a></h2>
 <ul>
 <li>Alex Nicholls (<a href="https://github.com/anicholls" target="_blank" rel="noopener noreferrer">@anicholls</a>)</li>
 <li>Ariful Alam (<a href="https://github.com/arifszn" target="_blank" rel="noopener noreferrer">@arifszn</a>)</li>
@@ -4709,11 +4709,11 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[2.0.0-beta.16]]></title>
-        <id>https://vulnsystem.github.io/changelog/2.0.0-beta.16</id>
-        <link href="https://vulnsystem.github.io/changelog/2.0.0-beta.16"/>
+        <id>https://thebestornothing.github.io/changelog/2.0.0-beta.16</id>
+        <link href="https://thebestornothing.github.io/changelog/2.0.0-beta.16"/>
         <updated>2022-02-25T20:00:00.000Z</updated>
         <summary type="html"><![CDATA[New Feature]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="rocket-new-feature">🚀 New Feature<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.16#rocket-new-feature" class="hash-link" aria-label="Direct link to 🚀 New Feature" title="Direct link to ���🚀 New Feature">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="rocket-new-feature">🚀 New Feature<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.16#rocket-new-feature" class="hash-link" aria-label="Direct link to 🚀 New Feature" title="Direct link to ���🚀 New Feature">​</a></h2>
 <ul>
 <li><code>docusaurus-logger</code>, <code>docusaurus-module-type-aliases</code>, <code>docusaurus-plugin-debug</code>, <code>docusaurus-plugin-pwa</code>, <code>docusaurus-theme-classic</code>, <code>docusaurus-theme-search-algolia</code>, <code>docusaurus-types</code>, <code>docusaurus</code>
 <ul>
@@ -4764,7 +4764,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="boom-breaking-change">💥 Breaking Change<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.16#boom-breaking-change" class="hash-link" aria-label="Direct link to 💥 Breaking Change" title="Direct link to 💥 Breaking Change">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="boom-breaking-change">💥 Breaking Change<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.16#boom-breaking-change" class="hash-link" aria-label="Direct link to 💥 Breaking Change" title="Direct link to 💥 Breaking Change">​</a></h2>
 <ul>
 <li><code>create-docusaurus</code>, <code>docusaurus-mdx-loader</code>, <code>docusaurus-migrate</code>, <code>docusaurus-plugin-client-redirects</code>, <code>docusaurus-plugin-content-blog</code>, <code>docusaurus-plugin-content-docs</code>, <code>docusaurus-plugin-content-pages</code>, <code>docusaurus-plugin-debug</code>, <code>docusaurus-plugin-ideal-image</code>, <code>docusaurus-plugin-pwa</code>, <code>docusaurus-plugin-sitemap</code>, <code>docusaurus-theme-classic</code>, <code>docusaurus-theme-common</code>, <code>docusaurus-theme-live-codeblock</code>, <code>docusaurus-theme-search-algolia</code>, <code>docusaurus-theme-translations</code>, <code>docusaurus-utils</code>, <code>docusaurus</code>, <code>stylelint-copyright</code>
 <ul>
@@ -4792,7 +4792,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.16#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.16#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
 <ul>
 <li><code>docusaurus-theme-common</code>
 <ul>
@@ -4850,7 +4850,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="nail_care-polish">💅 Polish<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.16#nail_care-polish" class="hash-link" aria-label="Direct link to 💅 Polish" title="Direct link to 💅 Polish">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="nail_care-polish">💅 Polish<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.16#nail_care-polish" class="hash-link" aria-label="Direct link to 💅 Polish" title="Direct link to 💅 Polish">​</a></h2>
 <ul>
 <li><code>docusaurus-mdx-loader</code>, <code>docusaurus-migrate</code>, <code>docusaurus-plugin-client-redirects</code>, <code>docusaurus-plugin-content-blog</code>, <code>docusaurus-plugin-content-docs</code>, <code>docusaurus-theme-common</code>, <code>docusaurus-theme-search-algolia</code>, <code>docusaurus-utils</code>, <code>docusaurus</code>, <code>lqip-loader</code>
 <ul>
@@ -4946,7 +4946,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="memo-documentation">📝 Documentation<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.16#memo-documentation" class="hash-link" aria-label="Direct link to 📝 Documentation" title="Direct link to 📝 Documentation">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="memo-documentation">📝 Documentation<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.16#memo-documentation" class="hash-link" aria-label="Direct link to 📝 Documentation" title="Direct link to 📝 Documentation">​</a></h2>
 <ul>
 <li>Other
 <ul>
@@ -4990,7 +4990,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="house-internal">🏠 Internal<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.16#house-internal" class="hash-link" aria-label="Direct link to 🏠 Internal" title="Direct link to 🏠 Internal">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="house-internal">🏠 Internal<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.16#house-internal" class="hash-link" aria-label="Direct link to 🏠 Internal" title="Direct link to 🏠 Internal">​</a></h2>
 <ul>
 <li><code>docusaurus-theme-classic</code>
 <ul>
@@ -5101,7 +5101,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="running-performance">:running: Performance<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.16#running-performance" class="hash-link" aria-label="Direct link to :running: Performance" title="Direct link to :running: Performance">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="running-performance">:running: Performance<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.16#running-performance" class="hash-link" aria-label="Direct link to :running: Performance" title="Direct link to :running: Performance">​</a></h2>
 <ul>
 <li><code>create-docusaurus</code>, <code>docusaurus-mdx-loader</code>, <code>docusaurus-migrate</code>, <code>docusaurus-plugin-content-blog</code>, <code>docusaurus-plugin-content-docs</code>, <code>docusaurus-theme-search-algolia</code>, <code>docusaurus-theme-translations</code>, <code>docusaurus-utils</code>, <code>docusaurus</code>
 <ul>
@@ -5109,7 +5109,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-38">Committers: 38<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.16#committers-38" class="hash-link" aria-label="Direct link to Committers: 38" title="Direct link to Committers: 38">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-38">Committers: 38<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.16#committers-38" class="hash-link" aria-label="Direct link to Committers: 38" title="Direct link to Committers: 38">​</a></h2>
 <ul>
 <li>Alexey Pyltsyn (<a href="https://github.com/lex111" target="_blank" rel="noopener noreferrer">@lex111</a>)</li>
 <li>Artem Kovalov (<a href="https://github.com/artemkovalyov" target="_blank" rel="noopener noreferrer">@artemkovalyov</a>)</li>
@@ -5305,11 +5305,11 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[2.0.0-beta.15]]></title>
-        <id>https://vulnsystem.github.io/changelog/2.0.0-beta.15</id>
-        <link href="https://vulnsystem.github.io/changelog/2.0.0-beta.15"/>
+        <id>https://thebestornothing.github.io/changelog/2.0.0-beta.15</id>
+        <link href="https://thebestornothing.github.io/changelog/2.0.0-beta.15"/>
         <updated>2022-01-26T20:00:00.000Z</updated>
         <summary type="html"><![CDATA[New Feature]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="rocket-new-feature">🚀 New Feature<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.15#rocket-new-feature" class="hash-link" aria-label="Direct link to 🚀 New Feature" title="Direct link to 🚀 New Feature">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="rocket-new-feature">🚀 New Feature<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.15#rocket-new-feature" class="hash-link" aria-label="Direct link to 🚀 New Feature" title="Direct link to 🚀 New Feature">​</a></h2>
 <ul>
 <li><code>docusaurus-plugin-content-docs</code>
 <ul>
@@ -5383,7 +5383,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="boom-breaking-change">💥 Breaking Change<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.15#boom-breaking-change" class="hash-link" aria-label="Direct link to 💥 Breaking Change" title="Direct link to 💥 Breaking Change">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="boom-breaking-change">💥 Breaking Change<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.15#boom-breaking-change" class="hash-link" aria-label="Direct link to 💥 Breaking Change" title="Direct link to 💥 Breaking Change">​</a></h2>
 <ul>
 <li><code>docusaurus-theme-search-algolia</code>
 <ul>
@@ -5406,7 +5406,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.15#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="bug-bug-fix">🐛 Bug Fix<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.15#bug-bug-fix" class="hash-link" aria-label="Direct link to 🐛 Bug Fix" title="Direct link to 🐛 Bug Fix">​</a></h2>
 <ul>
 <li><code>docusaurus-plugin-content-blog</code>, <code>docusaurus-theme-classic</code>, <code>docusaurus-types</code>, <code>docusaurus-utils-common</code>, <code>docusaurus-utils</code>, <code>docusaurus</code>
 <ul>
@@ -5477,7 +5477,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="nail_care-polish">💅 Polish<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.15#nail_care-polish" class="hash-link" aria-label="Direct link to 💅 Polish" title="Direct link to 💅 Polish">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="nail_care-polish">💅 Polish<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.15#nail_care-polish" class="hash-link" aria-label="Direct link to 💅 Polish" title="Direct link to 💅 Polish">​</a></h2>
 <ul>
 <li><code>docusaurus-module-type-aliases</code>
 <ul>
@@ -5551,7 +5551,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="memo-documentation">📝 Documentation<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.15#memo-documentation" class="hash-link" aria-label="Direct link to 📝 Documentation" title="Direct link to 📝 Documentation">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="memo-documentation">📝 Documentation<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.15#memo-documentation" class="hash-link" aria-label="Direct link to 📝 Documentation" title="Direct link to 📝 Documentation">​</a></h2>
 <ul>
 <li>Other
 <ul>
@@ -5641,7 +5641,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="house-internal">🏠 Internal<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.15#house-internal" class="hash-link" aria-label="Direct link to 🏠 Internal" title="Direct link to 🏠 Internal">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="house-internal">🏠 Internal<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.15#house-internal" class="hash-link" aria-label="Direct link to 🏠 Internal" title="Direct link to 🏠 Internal">​</a></h2>
 <ul>
 <li><code>docusaurus-mdx-loader</code>, <code>docusaurus-migrate</code>, <code>docusaurus-plugin-client-redirects</code>, <code>docusaurus-plugin-content-blog</code>, <code>docusaurus-plugin-content-docs</code>, <code>docusaurus-theme-classic</code>, <code>docusaurus-theme-common</code>, <code>docusaurus-theme-search-algolia</code>, <code>docusaurus-utils-validation</code>, <code>docusaurus-utils</code>, <code>docusaurus</code>
 <ul>
@@ -5788,7 +5788,7 @@
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-46">Committers: 46<a href="https://vulnsystem.github.io/changelog/2.0.0-beta.15#committers-46" class="hash-link" aria-label="Direct link to Committers: 46" title="Direct link to Committers: 46">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_SSbb" id="committers-46">Committers: 46<a href="https://thebestornothing.github.io/changelog/2.0.0-beta.15#committers-46" class="hash-link" aria-label="Direct link to Committers: 46" title="Direct link to Committers: 46">​</a></h2>
 <ul>
 <li>AJ Rice (<a href="https://github.com/ajrice6713" target="_blank" rel="noopener noreferrer">@ajrice6713</a>)</li>
 <li>Abdelrahman Ahmed (<a href="https://github.com/abahmed" target="_blank" rel="noopener noreferrer">@abahmed</a>)</li>
