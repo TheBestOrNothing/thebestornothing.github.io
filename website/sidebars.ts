@@ -12,12 +12,13 @@ const sidebars: SidebarsConfig = {
     'introduction',
     {
       type: 'category',
-      label: 'MetaMask GPT',
+      label: 'How to',
       link: {
         type: 'generated-index',
       },
       collapsed: false,
       items: [
+        'metamaskGPT/connect',
         'metamaskGPT/metamaskGPT-LLMs',
         'metamaskGPT/metamaskGPT-developing',
         'metamaskGPT/metamaskGPT-oauth-process',
