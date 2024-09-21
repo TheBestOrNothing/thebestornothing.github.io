@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[22005],{71685:e=>{e.exports=JSON.parse('{"title":"How to","slug":"/category/how-to","permalink":"/docs/category/how-to","navigation":{"previous":{"title":"Introduction","permalink":"/docs/"},"next":{"title":"Connect to MetaMask-GPT","permalink":"/docs/metamaskGPT/connect"}}}')}}]);
