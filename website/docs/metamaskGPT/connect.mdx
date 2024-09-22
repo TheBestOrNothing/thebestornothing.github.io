@@ -20,6 +20,15 @@ To connect to MetaMask without using EIP-6963, see the *Create a simple dapp** t
 
 ## Connect to MetaMask-GPT using prompts
 
+```bash title="Prompts"
+Goal: Establish a connection between the user’s MetaMask account and the GPT client, retrieve the MetaMask authorization code and QR code, generate a MetaMask token, and access the selected account.
+1. Request MetaMask Authorization: request the MetaMask authorization code and MetaMask QR code from the GPT client to initiate the connection to MetaMask via the authorization server.
+2. Retrieve Authorization Code & QR Code: once access to the authorization server is successful, retrieve the MetaMask authorization code and generate the MetaMask QR code.
+3. Prompt for QR Code Scanning: ask the user: "Have you scanned the MetaMask QR code to connect your account?" If the user responds Yes, proceed by exchanging the MetaMask authorization code for a MetaMask token.
+4. Retrieve MetaMask Token: Receiving the MetaMask token via the authorization server.
+5. Get Selected Account: Retrieve the user’s selected MetaMask account from the MetaMask mobile app.
+```
+
 ## Flow of MetaMask-GPT connection
 The MetaMask authorization code flow is described in the following. chatGPT client using theMetaMask authorization code flow acquire an access_token to include in requests to resources protected by the MetaMask-GPT identity platform (typically APIs). **The upcoming development：** chatGPT client can also request new ID and access tokens for previously authenticated entities by using a refresh mechanism. This diagram shows a high-level view of the authentication flow:
 
