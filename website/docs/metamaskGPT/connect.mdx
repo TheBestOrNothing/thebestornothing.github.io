@@ -39,11 +39,18 @@ sequenceDiagram
     MetaMaskMobile->>MetaMaskMobile: Scan the QRcode 
     MetaMask-GPTIdentityPlatform->>MetaMaskMobile: connect accounts request
     MetaMaskMobile->>MetaMask-GPTIdentityPlatform: accounts connected
-    chatGPTClient->>MetaMask-GPTIdentityPlatform: Request access token with authorization code
-    MetaMask-GPTIdentityPlatform->>MetaMaskMobile: sign of access token  request
-    MetaMaskMobile->>MetaMask-GPTIdentityPlatform: return sign of access token 
-    MetaMask-GPTIdentityPlatform->>chatGPTClient: sign, account, expired time composed as token
+    chatGPTClient->>MetaMask-GPTIdentityPlatform: Request access_token with authorization code
+    MetaMask-GPTIdentityPlatform->>MetaMaskMobile: sign of access_token  request
+    MetaMaskMobile->>MetaMask-GPTIdentityPlatform: return sign of access_token 
+    MetaMask-GPTIdentityPlatform->>chatGPTClient: sign, account, expired time composed as access_token
+    note over chatGPTClient, MetaMaskMobile: Now that you have successfully acquired an access_token, you can use the token in requests to web APIs by including it in the Authorization header.
 
+```
+
+```bash title="HTTP"
+GET /v1.0/me/messages
+Host: https://graph.gitcoins.io
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ik5HVEZ2ZEstZnl0aEV1Q...
 ```
 
 ### MetaMask code
