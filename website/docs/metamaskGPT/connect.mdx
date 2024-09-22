@@ -43,17 +43,17 @@ sequenceDiagram
     chatGPTClient->>MetaMask-GPTAuthServer: To request an authorization code using prompts
     MetaMask-GPTAuthServer->>chatGPTClient: Return the code and QRcode
     MetaMaskMobile->>MetaMaskMobile: Scan the QRcode 
-    MetaMask-GPTAuthServer->>MetaMaskMobile: connect accounts request
-    MetaMaskMobile->>MetaMask-GPTAuthServer: accounts connected
-    chatGPTClient->>MetaMask-GPTAuthServer: Request access_token with authorization code
-    MetaMask-GPTAuthServer->>MetaMaskMobile: sign of access_token  request
-    MetaMaskMobile->>MetaMask-GPTAuthServer: return sign of access_token 
-    MetaMask-GPTAuthServer->>chatGPTClient: sign, account, expired time composed as access_token
+    MetaMask-GPTAuthServer->>MetaMaskMobile: Request of connect accounts 
+    MetaMaskMobile->>MetaMask-GPTAuthServer: Accounts connected
+    chatGPTClient->>MetaMask-GPTAuthServer: Request of access_token with authorization code
+    MetaMask-GPTAuthServer->>MetaMaskMobile: Request of sign for access_token 
+    MetaMaskMobile->>MetaMask-GPTAuthServer: Return sign for access_token 
+    MetaMask-GPTAuthServer->>chatGPTClient: Sign, account, expired time composed as access_token
     note over chatGPTClient, MetaMaskMobile: Now that you have successfully acquired an access_token, you can use the token in requests to web APIs by including it in the Authorization header.
 
 ```
 
-## MetaMask-GPT Actions
+## MetaMask-GPT Authorization Actions
 
 ```bash title="Actions Schema"
 openapi: 3.1.0
@@ -63,9 +63,11 @@ info:
   version: 1.0.0
 servers:
   - url: https://a588-34-170-192-71.ngrok-free.app
-    description: The goal of server is to establish a connection between the user’s MetaMask account and the GPT client, retrieve the MetaMask authorization code and QR code, generate a MetaMask token, and access the selected account. First, Request MetaMask Authorization: request the MetaMask authorization code and MetaMask QR code from the GPT client to initiate the connection to MetaMask via the authorization server. Second, Retrieve Authorization Code & QR Code: once access to the authorization server is successful, retrieve the MetaMask authorization code and generate the MetaMask QR code. Third, Prompt for QR Code Scanning: ask the user: "Have you scanned the MetaMask QR code to connect your account?" Fourth, Retrieve MetaMask Token: If the user responds Yes, proceed by exchanging the MetaMask authorization code for a MetaMask token. Fifth, Get Selected Account: Retrieve the user’s selected MetaMask account from the MetaMask mobile app.
+    description: The goal of server is to establish a connection between the user’s MetaMask account and the GPT client, retrieve the MetaMask authorization code and QR code, generate a MetaMask token, and access the selected account. First, Request the MetaMask authorization code and MetaMask QR code from the GPT client to initiate the connection to MetaMask via the authorization server. Second, Once access to the authorization server is successful, retrieve the MetaMask authorization code and generate the MetaMask QR code. Third, ask the user "Have you scanned the MetaMask QR code to connect your account?" Fourth, If the user responds Yes, proceed by exchanging the MetaMask authorization code for a MetaMask token. Fifth, Retrieve the user’s selected MetaMask account from the MetaMask mobile app.
 paths:
+  //highlight-start
   /metamask/mmCode:
+  //highlight-end
     get:
       operationId: getMetaMaskCode
       summary: Retrieve the MetaMask authorization code and generate the MetaMask QR code to be exchanged for a MetaMask token.
@@ -85,7 +87,9 @@ paths:
                     type: string
                 example:
                   mmToken: 03a2299f702d0a7a1244bdcc4799bcd3ad2c804dff9ea6c992f1386cc05eeb622f
+  //highlight-start
   /metamask/mmToken:
+  //highlight-end
     post:
       operationId: getMetaMaskToken
       summary: After users have scanned the MetaMask QR code to connect your account, exchanging the MetaMask authorization code for a MetaMask token
@@ -117,7 +121,9 @@ paths:
                 properties:
                   mmToken:
                     type: string
+  //highlight-start
   /metamask/getSelectedAccount:
+  //highlight-end
     post:
       operationId: getSelectedAccount
       summary: get selected accounts from MetaMask mobile after getting MetaMask access tokens
@@ -147,15 +153,16 @@ paths:
           description: Invalid MetaMask code or request format
         "500":
           description: Server error
-
 ```
+
+
+
+### MetaMask code
+
+### MetaMask token
 
 ```bash title="HTTP"
 GET /v1.0/me/messages
 Host: https://graph.gitcoins.io
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ik5HVEZ2ZEstZnl0aEV1Q...
 ```
-
-### MetaMask code
-
-### MetaMask token
