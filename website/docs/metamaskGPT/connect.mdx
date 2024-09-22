@@ -10,14 +10,6 @@ The MetaMask-GPT authorization code flow allows chatGPT client to obtain access 
 It starts with the prompts directing the user to the MetaMask-GPT authorization server, where the user authenticates and consents.
 The MetaMask-GPT authorization server returns an authorization code to the client, which the client exchanges for an access token.
 
-:::info
-Learn more about EIP-6963 in **Wallet interoperability**.
-:::
-
-:::tip
-To connect to MetaMask without using EIP-6963, see the *Create a simple dapp** tutorial.
-:::
-
 ## Connect to MetaMask-GPT using prompts
 
 ```bash title="Prompts"
@@ -28,6 +20,9 @@ Goal: Establish a connection between the user’s MetaMask account and the GPT c
 4. Retrieve MetaMask Token: If the user responds Yes, proceed by exchanging the MetaMask authorization code for a MetaMask token.
 5. Get Selected Account: Retrieve the user’s selected MetaMask account from the MetaMask mobile app.
 ```
+:::tip
+The prompts of connecting to MetaMask-GPT are improved by [Prompt Engineer GPT](https://chatgpt.com/g/g-5XtVuRE8Y-prompt-engineer). This GPT let you become a pro prompt engineer, by learning and applying best prompt practices.
+:::
 
 ## Flow of MetaMask-GPT connection
 The MetaMask authorization code flow is described in the following. chatGPT client using theMetaMask authorization code flow acquire an access_token to include in requests to resources protected by the MetaMask-GPT identity platform (typically APIs). **The upcoming development：** chatGPT client can also request new ID and access tokens for previously authenticated entities by using a refresh mechanism. This diagram shows a high-level view of the authentication flow:
@@ -55,7 +50,7 @@ sequenceDiagram
 
 ## MetaMask-GPT Authorization Actions
 
-```bash title="Actions Schema"
+```js title="Actions Schema"
 openapi: 3.1.0
 info:
   title: MetaMask-GPT authorization server
