@@ -6,9 +6,9 @@ description: Connect to MetaMask based on chatGPT.
 
 You can connect to MetaMask-GPT by scanning MetaMask QRcode in chatGPT client and then connecting to your accounts.
 
-The MetaMask-GPT authorization code flow allows chatGPT client to obtain access tokens to access protected resources like web APIs.
-It starts with the prompts directing the user to the authorization server, where the user authenticates and consents.
-The server returns an authorization code to the client, which the client exchanges for an access token.
+The MetaMask-GPT authorization code flow allows chatGPT client to obtain access tokens to access protected resources like getting selected accounts.
+It starts with the prompts directing the user to the MetaMask-GPT authorization server, where the user authenticates and consents.
+The MetaMask-GPT authorization server returns an authorization code to the client, which the client exchanges for an access token.
 
 :::info
 Learn more about EIP-6963 in **Wallet interoperability**.
@@ -24,8 +24,8 @@ To connect to MetaMask without using EIP-6963, see the *Create a simple dapp** t
 Goal: Establish a connection between the user’s MetaMask account and the GPT client, retrieve the MetaMask authorization code and QR code, generate a MetaMask token, and access the selected account.
 1. Request MetaMask Authorization: request the MetaMask authorization code and MetaMask QR code from the GPT client to initiate the connection to MetaMask via the authorization server.
 2. Retrieve Authorization Code & QR Code: once access to the authorization server is successful, retrieve the MetaMask authorization code and generate the MetaMask QR code.
-3. Prompt for QR Code Scanning: ask the user: "Have you scanned the MetaMask QR code to connect your account?" If the user responds Yes, proceed by exchanging the MetaMask authorization code for a MetaMask token.
-4. Retrieve MetaMask Token: Receiving the MetaMask token via the authorization server.
+3. Prompt for QR Code Scanning: ask the user: "Have you scanned the MetaMask QR code to connect your account?" 
+4. Retrieve MetaMask Token: If the user responds Yes, proceed by exchanging the MetaMask authorization code for a MetaMask token.
 5. Get Selected Account: Retrieve the user’s selected MetaMask account from the MetaMask mobile app.
 ```
 
@@ -37,19 +37,116 @@ The MetaMask authorization code flow is described in the following. chatGPT clie
 sequenceDiagram
     autonumber
     participant chatGPTClient as chatGPT client
-    participant MetaMask-GPTIdentityPlatform as MetaMask-GPT Identity Platform
+    participant MetaMask-GPTAuthServer as MetaMask-GPT authorization server
     participant MetaMaskMobile as MetaMask Mobile
 
-    chatGPTClient->>MetaMask-GPTIdentityPlatform: To request an authorization code using prompts
-    MetaMask-GPTIdentityPlatform->>chatGPTClient: Return the code and QRcode
+    chatGPTClient->>MetaMask-GPTAuthServer: To request an authorization code using prompts
+    MetaMask-GPTAuthServer->>chatGPTClient: Return the code and QRcode
     MetaMaskMobile->>MetaMaskMobile: Scan the QRcode 
-    MetaMask-GPTIdentityPlatform->>MetaMaskMobile: connect accounts request
-    MetaMaskMobile->>MetaMask-GPTIdentityPlatform: accounts connected
-    chatGPTClient->>MetaMask-GPTIdentityPlatform: Request access_token with authorization code
-    MetaMask-GPTIdentityPlatform->>MetaMaskMobile: sign of access_token  request
-    MetaMaskMobile->>MetaMask-GPTIdentityPlatform: return sign of access_token 
-    MetaMask-GPTIdentityPlatform->>chatGPTClient: sign, account, expired time composed as access_token
+    MetaMask-GPTAuthServer->>MetaMaskMobile: connect accounts request
+    MetaMaskMobile->>MetaMask-GPTAuthServer: accounts connected
+    chatGPTClient->>MetaMask-GPTAuthServer: Request access_token with authorization code
+    MetaMask-GPTAuthServer->>MetaMaskMobile: sign of access_token  request
+    MetaMaskMobile->>MetaMask-GPTAuthServer: return sign of access_token 
+    MetaMask-GPTAuthServer->>chatGPTClient: sign, account, expired time composed as access_token
     note over chatGPTClient, MetaMaskMobile: Now that you have successfully acquired an access_token, you can use the token in requests to web APIs by including it in the Authorization header.
+
+```
+
+## MetaMask-GPT Actions
+
+```bash title="Actions Schema"
+openapi: 3.1.0
+info:
+  title: MetaMask-GPT authorization server
+  description: The MetaMask-GPT authorization code flow allows chatGPT client to obtain access tokens to access protected resources like getting selected accounts. It starts with the prompts directing the user to the MetaMask-GPT authorization server, where the user authenticates and consents. The MetaMask-GPT authorization server returns an authorization code to the client, which the client exchanges for an access token.
+  version: 1.0.0
+servers:
+  - url: https://a588-34-170-192-71.ngrok-free.app
+    description: The goal of server is to establish a connection between the user’s MetaMask account and the GPT client, retrieve the MetaMask authorization code and QR code, generate a MetaMask token, and access the selected account. First, Request MetaMask Authorization: request the MetaMask authorization code and MetaMask QR code from the GPT client to initiate the connection to MetaMask via the authorization server. Second, Retrieve Authorization Code & QR Code: once access to the authorization server is successful, retrieve the MetaMask authorization code and generate the MetaMask QR code. Third, Prompt for QR Code Scanning: ask the user: "Have you scanned the MetaMask QR code to connect your account?" Fourth, Retrieve MetaMask Token: If the user responds Yes, proceed by exchanging the MetaMask authorization code for a MetaMask token. Fifth, Get Selected Account: Retrieve the user’s selected MetaMask account from the MetaMask mobile app.
+paths:
+  /metamask/mmCode:
+    get:
+      operationId: getMetaMaskCode
+      summary: Retrieve the MetaMask authorization code and generate the MetaMask QR code to be exchanged for a MetaMask token.
+      responses:
+        "200":
+          description: The MetaMask authorization code and QR code generated to be exchanged for a MetaMask token.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  qrcodeUrl:
+                    type: string
+                  mmCode:
+                    type: string
+                  NoteForAssistant:
+                    type: string
+                example:
+                  mmToken: 03a2299f702d0a7a1244bdcc4799bcd3ad2c804dff9ea6c992f1386cc05eeb622f
+  /metamask/mmToken:
+    post:
+      operationId: getMetaMaskToken
+      summary: After users have scanned the MetaMask QR code to connect your account, exchanging the MetaMask authorization code for a MetaMask token
+      requestBody:
+        description: Exchanging the MetaMask authorization code for a MetaMask token.
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - mmCode
+                - duration
+              properties:
+                mmCode:
+                  type: string
+                  description: The MetaMask code to be exchanged for a MetaMask token.
+                duration:
+                  type: integer
+                  description: how long the MetaMask token will be alive in minute.
+                  minimum: 180
+      responses:
+        "200":
+          description: The MetaMask access tokens to access protected resources like getting selected accounts..
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  mmToken:
+                    type: string
+  /metamask/getSelectedAccount:
+    post:
+      operationId: getSelectedAccount
+      summary: get selected accounts from MetaMask mobile after getting MetaMask access tokens
+      requestBody:
+        description: Use MetaMask access tokens to get selected accounts
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                mmToken:
+                  type: string
+                  description: The MetaMask access token is used to verify the identity of the user or client
+      responses:
+        "200":
+          description: selected account successfully retrieved from MetaMask mobile
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  account:
+                    type: string
+                    description: selected account from MetaMask mobile
+        "400":
+          description: Invalid MetaMask code or request format
+        "500":
+          description: Server error
 
 ```
 
