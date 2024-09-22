@@ -21,6 +21,30 @@ To connect to MetaMask without using EIP-6963, see the *Create a simple dapp** t
 ## Connect to MetaMask-GPT using prompts
 
 ## Flow of MetaMask-GPT connection
+The MetaMask authorization code flow is described in the following. chatGPT client using theMetaMask authorization code flow acquire an access_token to include in requests to resources protected by the MetaMask-GPT identity platform (typically APIs). 
+
+**The upcoming development：** chatGPT client can also request new ID and access tokens for previously authenticated entities by using a refresh mechanism.
+
+This diagram shows a high-level view of the authentication flow:
+```mermaid
+
+sequenceDiagram
+    autonumber
+    participant chatGPTClient as chatGPT client
+    participant MetaMask-GPTIdentityPlatform as MetaMask-GPT Identity Platform
+    participant MetaMaskMobile as MetaMask Mobile
+
+    chatGPTClient->>MetaMask-GPTIdentityPlatform: To request an authorization code using prompts
+    MetaMask-GPTIdentityPlatform->>chatGPTClient: Return the code and QRcode
+    MetaMaskMobile->>MetaMaskMobile: Scan the QRcode 
+    MetaMask-GPTIdentityPlatform->>MetaMaskMobile: connect accounts request
+    MetaMaskMobile->>MetaMask-GPTIdentityPlatform: accounts connected
+    chatGPTClient->>MetaMask-GPTIdentityPlatform: Request access token with authorization code
+    MetaMask-GPTIdentityPlatform->>MetaMaskMobile: access token sign request
+    MetaMaskMobile->>MetaMask-GPTIdentityPlatform: return access sign of token 
+    MetaMask-GPTIdentityPlatform->>chatGPTClient: sign, account, expired time composed as token
+
+```
 
 ### MetaMask code
 
