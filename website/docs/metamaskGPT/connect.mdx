@@ -40,8 +40,8 @@ sequenceDiagram
     MetaMask-GPTIdentityPlatform->>MetaMaskMobile: connect accounts request
     MetaMaskMobile->>MetaMask-GPTIdentityPlatform: accounts connected
     chatGPTClient->>MetaMask-GPTIdentityPlatform: Request access token with authorization code
-    MetaMask-GPTIdentityPlatform->>MetaMaskMobile: access token sign request
-    MetaMaskMobile->>MetaMask-GPTIdentityPlatform: return access sign of token 
+    MetaMask-GPTIdentityPlatform->>MetaMaskMobile: sign of access token  request
+    MetaMaskMobile->>MetaMask-GPTIdentityPlatform: return sign of access token 
     MetaMask-GPTIdentityPlatform->>chatGPTClient: sign, account, expired time composed as token
 
 ```
