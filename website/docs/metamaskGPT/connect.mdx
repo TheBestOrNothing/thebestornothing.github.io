@@ -4,8 +4,7 @@ description: Connect to MetaMask based on chatGPT.
 
 # Connect to MetaMask-GPT
 
-You can connect to MetaMask-GPT by scanning MetaMask QRcode in chatGPT client and then connecting to your accounts.
-
+You can connect to MetaMask-GPT by following the MetaMask-GPT authorization code flow which retrieve the MetaMask authorization code and QR code, generate a MetaMask token, and access the resources.
 The MetaMask-GPT authorization code flow allows chatGPT client to obtain access tokens to access protected resources like getting selected accounts.
 It starts with the prompts directing the user to the MetaMask-GPT authorization server, where the user authenticates and consents.
 The MetaMask-GPT authorization server returns an authorization code to the client, which the client exchanges for an access token.
@@ -23,30 +22,6 @@ Goal: Establish a connection between the user’s MetaMask account and the GPT c
 :::tip
 The prompts of connecting to MetaMask-GPT are improved by [Prompt Engineer GPT](https://chatgpt.com/g/g-5XtVuRE8Y-prompt-engineer). This GPT let you become a pro prompt engineer, by learning and applying best prompt practices.
 :::
-
-## Flow of MetaMask-GPT connection
-The MetaMask authorization code flow is described in the following. chatGPT client using theMetaMask authorization code flow acquire an access_token to include in requests to resources protected by the MetaMask-GPT identity platform (typically APIs). **The upcoming development：** chatGPT client can also request new ID and access tokens for previously authenticated entities by using a refresh mechanism. This diagram shows a high-level view of the authentication flow:
-
-```mermaid
-
-sequenceDiagram
-    autonumber
-    participant chatGPTClient as chatGPT client
-    participant MetaMask-GPTAuthServer as MetaMask-GPT authorization server
-    participant MetaMaskMobile as MetaMask Mobile
-
-    chatGPTClient->>MetaMask-GPTAuthServer: To request an authorization code using prompts
-    MetaMask-GPTAuthServer->>chatGPTClient: Return the code and QRcode
-    MetaMaskMobile->>MetaMaskMobile: Scan the QRcode 
-    MetaMask-GPTAuthServer->>MetaMaskMobile: Request of connect accounts 
-    MetaMaskMobile->>MetaMask-GPTAuthServer: Accounts connected
-    chatGPTClient->>MetaMask-GPTAuthServer: Request of access_token with authorization code
-    MetaMask-GPTAuthServer->>MetaMaskMobile: Request of sign for access_token 
-    MetaMaskMobile->>MetaMask-GPTAuthServer: Return sign for access_token 
-    MetaMask-GPTAuthServer->>chatGPTClient: Sign, account, expired time composed as access_token
-    note over chatGPTClient, MetaMaskMobile: Now that you have successfully acquired an access_token, you can use the token in requests to web APIs by including it in the Authorization header.
-
-```
 
 ## MetaMask-GPT Authorization Actions
 
@@ -150,11 +125,47 @@ paths:
           description: Server error
 ```
 
+## Flow of MetaMask-GPT connection
+The MetaMask authorization code flow is described in the following. chatGPT client using theMetaMask authorization code flow acquire an access_token to include in requests to resources protected by the MetaMask-GPT identity platform (typically APIs). **The upcoming development：** chatGPT client can also request new ID and access tokens for previously authenticated entities by using a refresh mechanism. This diagram shows a high-level view of the authentication flow:
+
+```mermaid
+%%{
+  init: {
+    'sequence': {
+      'actorMargin': 100,
+      'width': 250,
+      'noteMargin': 15
+    }
+  }
+}%%
+
+sequenceDiagram
+    autonumber
+    participant chatGPTClient as chatGPT client
+    participant MetaMask-GPTAuthServer as MetaMask-GPT authorization server
+    participant MetaMaskMobile as MetaMask Mobile
+
+    chatGPTClient->>MetaMask-GPTAuthServer: To request an authorization code using prompts
+    MetaMask-GPTAuthServer->>chatGPTClient: Return the code and QRcode
+    MetaMaskMobile->>MetaMaskMobile: Scan the QRcode 
+    MetaMask-GPTAuthServer->>MetaMaskMobile: Request of connect accounts 
+    MetaMaskMobile->>MetaMask-GPTAuthServer: Accounts connected
+    chatGPTClient->>MetaMask-GPTAuthServer: Request of access_token with authorization code
+    MetaMask-GPTAuthServer->>MetaMaskMobile: Request of sign for access_token 
+    MetaMaskMobile->>MetaMask-GPTAuthServer: Return sign for access_token 
+    MetaMask-GPTAuthServer->>chatGPTClient: Sign, account, expired time composed as access_token
+    note over chatGPTClient, MetaMaskMobile: Now that you have successfully acquired an access_token, you can use the token in requests to web APIs by including it in the Authorization header.
+
+```
+
+## MetaMask-GPT authorization code flow
+
+## Request an authorization code and QR code
 
 
-### MetaMask code
+## Generate a MetaMask token
 
-### MetaMask token
+## Access the resources
 
 ```bash title="HTTP"
 GET /v1.0/me/messages
