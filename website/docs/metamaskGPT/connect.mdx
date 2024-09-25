@@ -109,6 +109,132 @@ So if can not use JWT like Panva Jose, all the generation, verification and othe
 If you have any good idea, please let me know. Thanks.
 :::
 
+```bash title="HTTP request"
+POST /metamask/mmToken HTTP/1.1
+Host: a588-34-170-192-71.ngrok-free.app
+User-Agent: Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot
+Content-Type: application/json
+{"mmCode": "03c6963d7db2a998bab719d3b643d52a639981f7347917e6b2f269cd05a1476dd6", "duration": 10}
+```
+
+```bash title="HTTP successful response"
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+{"mmToken":"1727018256602.0x4477610799e7910f0e40f64da702aa9ffcf929ac.0xc682b4105848e0c50a0c8a02f96528b5cd8940322ca5b2080e13585f34640a596068fa69ff9241d33e2f1ee0752bb29498f28f66067a10594cfdf585861ffa661c",
+"NoteForAssistant":"use mmToken to access the resource in the provider"}
+```
+
+[`eth_signTypedData_v4`](https://docs.metamask.io/wallet/how-to/sign-data/#use-eth_signtypeddata_v4) provides the most human-readable signatures that are efficient to process on-chain. It follows the [EIP-712](https://eips.ethereum.org/EIPS/eip-712) specification to allow users to sign typed structured data that can be verified on-chain. An `eth_signTypedData_v4` payload uses a standard format of encoding structs, but has a different format for the top-level struct that is signed, which includes some metadata about the verifying contract to provide replay protection of these signatures between different contract instances.
+
+```javascript title="eth_signTypedData_v4 EIP-712 structure"
+const getMsgParams = (account, expireTime) => {
+        const dateObject = new Date(expireTime); 
+        const isoString = dateObject.toISOString();
+
+        const msgParams = {
+            domain: {
+                chainId: '0x1',
+                name: 'MetaMask-GPT Connection',
+                verifyingContract: '0xCcCCccccCCCCcCCCCCCcCcCccCcCCCcCcccccccC',
+                version: '1',
+            },
+            message: {
+                exp: isoString,
+                iss: account,
+            },
+            primaryType: 'Code',
+            types: {
+                EIP712Domain: [
+                    { name: 'name', type: 'string' },
+                    { name: 'version', type: 'string' },
+                    { name: 'chainId', type: 'uint256' },
+                    { name: 'verifyingContract', type: 'address' },
+                ],
+                Code: [
+                    { name: 'iss', type: 'string' },
+                    { name: 'exp', type: 'string' },
+                ],
+            },
+        };
+
+        return msgParams;
+    };
+```
+eth_signTypedData_v4 presents a data message for the user to sign in a structured and readable format and returns the signed response. 
+```javascript title="mmToken generation"
+    async tokenGenerate(sdk, account, expireTime) {
+        const provider = sdk.getProvider();
+        let sign = null;
+
+        const dateObject = new Date(expireTime); 
+        const isoString = dateObject.toISOString();
+        const msgParams = getMsgParams(account, expireTime);
+
+        try {
+            sign = await provider.request({
+                method: 'eth_signTypedData_v4',
+                params: [account, JSON.stringify(msgParams)],
+            });        
+        } catch (err) {
+            console.error(err);
+        }
+        const mmToken = `${expireTime}.${account}.${sign}`;
+        return mmToken;
+    }
+```
+
+We recommend using [`eth-sig-util`](https://github.com/MetaMask/eth-sig-util) to generate and validate signatures. You can use [`eip712-codegen`](https://github.com/danfinlay/eip712-codegen#readme) to generate most of the Solidity required to verify these signatures on-chain. It currently doesn't generate the top-level struct verification code, so you must write that part manually. See
+[this example implementation](https://github.com/delegatable/delegatable-sol/blob/fb34bb259890417285f7185bc6500fb0ab8bf86f/contracts/Delegatable.sol#L80).
+
+```javascript title="mmToken Verification"
+const verifyMetaMaskToken = (req, res, next) => {
+    // Check for the token in the request body
+    const mmToken = req.body.mmToken; 
+    if (mmToken && mmToken.split('.').length == 3) {
+        const parts = mmToken.split('.');
+        const expireTimeStr = parts[0];
+        const account = parts[1];
+        const sign = parts[2];
+        const expireTime = Number(expireTimeStr);
+
+        let timeout = false;
+        if (Date.now()  > expireTime) {
+            // Token has expired, terminate the session and remove from MetaMaskSDKManager
+            timeout = true;
+        }
+
+        const msgParams = getMsgParams(account, expireTime);
+        try {
+            const recoveredAddr = recoverTypedSignature({
+                data: msgParams,
+                signature: sign,
+                version: 'V4',
+            });
+
+            if (!timeout && toChecksumAddress(recoveredAddr) === toChecksumAddress(account)) {
+                req.account = account;
+                next();
+            } else {
+                if (timeout) {   // Token has expired
+                    console.log(`Token has expired`);
+                } else {
+                    console.log(`Failed to verify signer when comparing ${recoveredAddr} to ${from}`);
+                }
+                return res.redirect('/metamask/mmCode');
+            }
+        } catch (e) {
+            console.error(e);
+            return res.redirect('/metamask/mmCode');
+        }
+    } else {
+        // If no token is present, redirect to get a new token
+        return res.redirect('/metamask/mmCode');
+    }
+}
+```
+
+
 ### Access the resources
 
 ## MetaMask-GPT Authorization Actions
