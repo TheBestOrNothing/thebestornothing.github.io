@@ -161,7 +161,7 @@ const getMsgParams = (account, expireTime) => {
         return msgParams;
     };
 ```
-eth_signTypedData_v4 presents a data message for the user to sign in a structured and readable format and returns the signed response. 
+eth_signTypedData_v4 presents a data message for the user to sign in a structured and readable format and returns the signed response. At last, the **MetaMask token(mmToken)** is composed of expiration time, account, and signature. 
 ```javascript title="mmToken generation"
     async tokenGenerate(sdk, account, expireTime) {
         const provider = sdk.getProvider();
@@ -186,6 +186,9 @@ eth_signTypedData_v4 presents a data message for the user to sign in a structure
 
 We recommend using [`eth-sig-util`](https://github.com/MetaMask/eth-sig-util) to generate and validate signatures. You can use [`eip712-codegen`](https://github.com/danfinlay/eip712-codegen#readme) to generate most of the Solidity required to verify these signatures on-chain. It currently doesn't generate the top-level struct verification code, so you must write that part manually. See
 [this example implementation](https://github.com/delegatable/delegatable-sol/blob/fb34bb259890417285f7185bc6500fb0ab8bf86f/contracts/Delegatable.sol#L80).
+
+The resource server validates the access token to ensure it is authentic, unexpired, and has the necessary scopes (permissions) for the requested resource.
+Validation may involve checking the token's signature and expiration time.
 
 ```javascript title="mmToken Verification"
 const verifyMetaMaskToken = (req, res, next) => {
@@ -236,6 +239,32 @@ const verifyMetaMaskToken = (req, res, next) => {
 
 
 ### Access the resources
+In OAuth 2.0, obtaining an access token is a critical step that allows a client application to securely access protected resources on behalf of a user. The access token serves as proof that the client has been authorized, and it must be presented with each request to the resource server. This mechanism ensures that resource servers can enforce access controls and that user data remains secure.
+In OAuth 2.0, the standard and recommended method for a client to send an access token when accessing protected resources is to include it in the Authorization header using the Bearer token scheme:
+
+```bash title="HTTP REQUEST: Token in OAuth 2.0 code flow"
+GET /resource HTTP/1.1
+Host: api.example.com
+Authorization: Bearer {access_token}
+```
+
+the ChatGPT action API currently does not support custom headers, including the Authorization header. This limitation means that you cannot send the access token in the header as per the standard OAuth 2.0 practice. As a result, you have to include the token in the POST body instead.
+
+```bash title="HTTP REQUEST: Token in MetaMask auth code flow"
+POST /metamask/getSelectedAccount HTTP/1.1
+Host: a588-34-170-192-71.ngrok-free.app
+User-Agent: Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/1.0; +https://openai.com/bot
+{"mmToken": "1727018256602.0x4477610799e7910f0e40f64da702aa9ffcf929ac.0xc682b4105848e0c50a0c8a02f96528b5cd8940322ca5b2080e13585f34640a596068fa69ff9241d33e2f1ee0752bb29498f28f66067a10594cfdf585861ffa661c"}
+```
+
+
+```bash title="HTTP successful response"
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+{"account":"0x4477610799e7910f0e40f64da702aa9ffcf929ac"}
+```
+
 
 ## MetaMask-GPT Authorization Actions
 
