@@ -94,7 +94,7 @@ Content-Type: application/json; charset=utf-8
 ### Connect to the MetaMask wallet
 After one user scanning the QR code, the eth_requestAccounts is commonly called to connect their MetaMask wallet from the MetaMask SDK which in MetaMask-GPT authorization server. After that, other API methods can be used to interact with the Ethereum blockchain on behalf of the user. Here’s a step-by-step breakdown of what happens when connect the MetaMask wallet and eth_requestAccounts is called:
 
-- **Request Access:** The MetaMask SDK calls ethereum.request({ method: 'eth_requestAccounts' }) to ask for access to the user's MetaMask accounts.
+- **Request Access:** The MetaMask SDK calls **eth_requestAccounts** to ask for access to the user's MetaMask accounts.
 
 - **MetaMask Prompt:** MetaMask Mobile will display a dialog to the user asking if you want to connect your wallet with your account(s).
 
