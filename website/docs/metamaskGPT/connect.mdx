@@ -1,5 +1,5 @@
 ---
-description: Connect to MetaMask based on chatGPT.
+description: Connect to MetaMask-GPT Following authorization code flow.
 ---
 
 # Connect to MetaMask-GPT
@@ -145,8 +145,13 @@ Content-Type: application/json; charset=utf-8
 "NoteForAssistant":"use mmToken to access the resource in the provider"}
 ```
 
-How to get signatures from MetaMasM Mobile:
-[`eth_signTypedData_v4`](https://docs.metamask.io/wallet/how-to/sign-data/#use-eth_signtypeddata_v4) provides the most human-readable signatures that are efficient to process on-chain. It follows the [EIP-712](https://eips.ethereum.org/EIPS/eip-712) specification to allow users to sign typed structured data that can be verified on-chain. An `eth_signTypedData_v4` payload uses a standard format of encoding structs, but has a different format for the top-level struct that is signed, which includes some metadata about the verifying contract to provide replay protection of these signatures between different contract instances.
+How to get signatures from MetaMask Mobile:
+
+- [`eth_signTypedData_v4`](https://docs.metamask.io/wallet/how-to/sign-data/#use-eth_signtypeddata_v4) provides the most human-readable signatures that are efficient to process on-chain. 
+
+- It follows the [EIP-712](https://eips.ethereum.org/EIPS/eip-712) specification to allow users to sign typed structured data that can be verified on-chain. 
+
+- An `eth_signTypedData_v4` payload uses a standard format of encoding structs, but has a different format for the top-level struct that is signed, which includes some metadata about the verifying contract to provide replay protection of these signatures between different contract instances.
 
 ```javascript title="eth_signTypedData_v4 EIP-712 structure"
 const getMsgParams = (account, expireTime) => {
@@ -218,7 +223,7 @@ When calling eth_signTypedData_v4 in the MetaMask SDK, the MetaMask Mobile app w
 
 
 ### Access the resources
-In The MetaMask authorization code flow, obtaining an MetaMask token is a critical step that allows a client application to securely access protected resources on behalf of a user. The MetaMask token serves as proof that the client has been authorized, and it must be presented with each request to the resource server. This mechanism ensures that resource servers can enforce access controls and that user data remains secure.
+In MetaMask authorization code flow, obtaining an MetaMask token is a critical step that allows a client application to securely access protected resources on behalf of a user. The MetaMask token serves as proof that the client has been authorized, and it must be presented with each request to the resource server. This mechanism ensures that resource servers can enforce access controls and that user data remains secure.
 
 In OAuth 2.0, the standard and recommended method for a client to send an access token when accessing protected resources is to include it in the Authorization header using the Bearer token scheme:
 
