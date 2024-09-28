@@ -47,7 +47,8 @@ sequenceDiagram
     MetaMask-GPTAuthServer->>chatGPTClient: Return the code and QRcode
     MetaMaskMobile->>MetaMaskMobile: Scan the QRcode 
     MetaMask-GPTAuthServer->>MetaMaskMobile: Connect to the MetaMask wallet
-    MetaMaskMobile->>MetaMask-GPTAuthServer: Ethereum accounts in MetaMask Mobile
+    activate MetaMaskMobile
+    MetaMaskMobile-->>MetaMask-GPTAuthServer: Ethereum accounts in MetaMask Mobile
     chatGPTClient->>MetaMask-GPTAuthServer: Request of access_token with authorization code
     MetaMask-GPTAuthServer->>MetaMaskMobile: Request of sign for access_token 
     MetaMaskMobile->>MetaMask-GPTAuthServer: Return sign for access_token
@@ -56,7 +57,7 @@ sequenceDiagram
 
 ```
 :::tip
-Mermaid Chart, text-based diagramming helps to simplify documentation processes - improving workflows and communication among teams. [Mermaid Chart GPT](https://chatgpt.com/g/g-1IRFKwq4G-mermaid-chart-diagrams-and-charts) will create a wide range of charts and diagrams from markdown-style code.
+[Mermaid Chart](https://mermaid.js.org/intro/), text-based diagramming helps to improve workflows and communication among teams. [Mermaid Chart GPT](https://chatgpt.com/g/g-1IRFKwq4G-mermaid-chart-diagrams-and-charts) will create a wide range of charts and diagrams from markdown-style code.
 :::
 
 ### Request an authorization code
