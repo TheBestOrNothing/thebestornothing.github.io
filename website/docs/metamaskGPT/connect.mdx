@@ -23,8 +23,8 @@ Goal: Establish a connection between the user’s MetaMask account and the GPT c
 The prompts of connecting to MetaMask-GPT are improved by [Prompt Engineer GPT](https://chatgpt.com/g/g-5XtVuRE8Y-prompt-engineer). This GPT let you become a pro prompt engineer, by learning and applying best prompt practices.
 :::
 
-## The MetaMask authorization code flow
-The chatGPT client using the MetaMask authorization code flow acquire an access token and resources protected by the MetaMask-GPT identity platform (typically APIs). "mmCode" is an abbreviation for the MetaMask authorization code, which is a temporary code used during the authorization flow to authenticate and exchange for an access token. "mmToken" is an abbreviation for the MetaMask Token, a short-lived access token used in the authorization flow. This token is exchanged after successful authentication using the mmCode (MetaMask authorization code) and is used to authorize subsequent API requests on behalf of the user. This diagram shows a high-level view of the MetaMask authorization code flow:
+## MetaMask’s OAuth-Inspired Flow
+The chatGPT client using the MetaMask authorization code flow acquire an access token and resources protected by the MetaMask-GPT identity platform (typically APIs). The concepts of mmcode (MetaMask authorization code) and mmToken (MetaMask token) draw inspiration from the OAuth 2.0 authorization framework, bringing secure authentication and authorization to decentralized applications. "mmCode" is an abbreviation for the MetaMask authorization code, which is a temporary code used during the authorization flow to exchange for an access token. "mmToken" is an abbreviation for the MetaMask Token, a short-lived access token used in the authorization flow. This token is exchanged after successful authentication using the mmCode (MetaMask authorization code) and is used to authorize subsequent API requests on behalf of the user. This diagram shows a high-level view of the MetaMask authorization code flow:
 
 ```mermaid
 %%{
@@ -55,6 +55,14 @@ sequenceDiagram
     note over chatGPTClient, MetaMaskMobile: Now that you have successfully acquired an MetaMask token, you can use the token in requests to web APIs.
 
 ```
+
+:::info
+OAuth 2.0 is a widely used protocol for granting access to resources without sharing user credentials. It defines several flows for different types of applications, but the most common flow for web and mobile apps is the Authorization Code Flow. This flow involves exchanging an authorization code (a temporary credential) for an access token that grants the app permission to act on behalf of the user. Key OAuth 2.0 Components:
+1. **Authorization Code:** A temporary code that is issued to the client after the user successfully authenticates.
+2. **Access Token:** A token issued to the client that allows it to access the user's resources.
+3. **Refresh Token:** A token that can be used to refresh the access token once it expires.
+:::
+
 :::tip
 [Mermaid Chart](https://mermaid.js.org/intro/), text-based diagramming helps to improve workflows and communication among teams. [Mermaid Chart GPT](https://chatgpt.com/g/g-1IRFKwq4G-mermaid-chart-diagrams-and-charts) will create a wide range of charts and diagrams from markdown-style code.
 :::
