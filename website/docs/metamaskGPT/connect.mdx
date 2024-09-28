@@ -24,7 +24,7 @@ The prompts of connecting to MetaMask-GPT are improved by [Prompt Engineer GPT](
 :::
 
 ## The MetaMask authorization code flow
-The chatGPT client using the MetaMask authorization code flow acquire an access_token and resources protected by the MetaMask-GPT identity platform (typically APIs). The MetaMask Code(mmCode) is equivalent to an OAuth 2.0 authorization code, which is a short-lived token used to exchange for the more durable MetaMask Token(mmToken), similar to the access token in OAuth.**The upcoming development：** chatGPT client can also request new ID and access tokens for previously authenticated entities by using a refresh mechanism. This diagram shows a high-level view of the authentication flow:
+The chatGPT client using the MetaMask authorization code flow acquire an access token and resources protected by the MetaMask-GPT identity platform (typically APIs). "mmCode" is an abbreviation for the MetaMask authorization code, which is a temporary code used during the authorization flow to authenticate and exchange for an access token. "mmToken" is an abbreviation for the MetaMask Token, a short-lived access token used in the authorization flow. This token is exchanged after successful authentication using the mmCode (MetaMask authorization code) and is used to authorize subsequent API requests on behalf of the user. This diagram shows a high-level view of the MetaMask authorization code flow:
 
 ```mermaid
 %%{
@@ -48,20 +48,20 @@ sequenceDiagram
     MetaMaskMobile->>MetaMaskMobile: Scan MetaMask QRcode 
     MetaMask-GPTAuthServer->>+MetaMaskMobile: Connect to the MetaMask wallet
     MetaMaskMobile-->>MetaMask-GPTAuthServer: Ethereum accounts in MetaMask Mobile
-    chatGPTClient->>MetaMask-GPTAuthServer: Request of MetaMask token with authorization code
+    chatGPTClient->>MetaMask-GPTAuthServer: Request of MetaMask token with the code
     MetaMask-GPTAuthServer->>MetaMaskMobile: eth_signTypedData_v4 for signature 
     MetaMaskMobile-->>MetaMask-GPTAuthServer: Return signature to MetaMask token
     MetaMask-GPTAuthServer-->>chatGPTClient: MetaMask token composed of signature, account, expired time 
-    note over chatGPTClient, MetaMaskMobile: Now that you have successfully acquired an access_token, you can use the token in requests to web APIs by including it in the Authorization header.
+    note over chatGPTClient, MetaMaskMobile: Now that you have successfully acquired an MetaMask token, you can use the token in requests to web APIs.
 
 ```
 :::tip
 [Mermaid Chart](https://mermaid.js.org/intro/), text-based diagramming helps to improve workflows and communication among teams. [Mermaid Chart GPT](https://chatgpt.com/g/g-1IRFKwq4G-mermaid-chart-diagrams-and-charts) will create a wide range of charts and diagrams from markdown-style code.
 :::
 
-### Request an MetaMask authorization code
+### MetaMask authorization code request
 
-Retrieve the MetaMask authorization code(mmCode) and generate the MetaMask QR code to be exchanged for a MetaMask token. mmCode has a limited validity time window, and if it's not exchanged for an mmToken within that time, it expires, much like how the authorization code in OAuth must be used within a limited period before becoming invalid. Once the mmCode is exchanged for the mmToken, the mmCode becomes immediately invalid, ensuring that it can't be reused, akin to the way OAuth invalidates the authorization code post-exchange.
+MetaMask authorization code(mmCode) has a limited validity time window, and if it's not exchanged for an mmToken within that time, it expires, much like how the authorization code in OAuth must be used within a limited period before becoming invalid. Once the mmCode is exchanged for the mmToken, the mmCode becomes immediately invalid, ensuring that it can't be reused, akin to the way OAuth invalidates the authorization code post-exchange.
 
 ```bash title="HTTP request"
 GET /metamask/mmCode HTTP/1.1
@@ -78,7 +78,7 @@ Content-Type: application/json; charset=utf-8
 "NoteForAssistant":"display the image provided in the qrcodeUrl to the user"}
 ```
 
-**mmCode and QRcode Generation:**
+mmCode and QR code Generation:
 - For each request, a new MetaMask SDK instance is created in the MetaMask-GPT authorization server, similar to how OAuth generates a unique authorization flow for each session.
 - Each SDK instance has a distinct channelId and pubKey, which function similarly to OAuth's session identifiers . 
 - In this case, the pubKey is used as the session ID for managing user state without exposing the channelId.
@@ -92,7 +92,7 @@ Content-Type: application/json; charset=utf-8
 **Establishing a Secure Connection from chatGPT client:** Although the chatGPT client is runing in Browser, but it can not hold instances like MetaMask SDK. Now(25/09/2024) the chatGPT GPTs only have ability to get resources by API. Without MetaMask SDK instances in the chatGPT client, the client can not sync the status from MetaMask Mobile. So you must explicit instruction to chatGPT that you have sanned the QRcode. So in the prompts to connect MetaMask-GPT, GPT will ask users: "Have you scanned the MetaMask QR code to connect your account?" 
 
 ### Connect to the MetaMask wallet
-After one user scanning the QR code, the eth_requestAccounts is commonly called to connect their MetaMask wallet from the MetaMask SDK which in MetaMask-GPT authorization server. After that, other API methods can be used to interact with the Ethereum blockchain on behalf of the user. Here’s a step-by-step breakdown of what happens when connect the MetaMask wallet and eth_requestAccounts is called:
+After one user scanning the QR code by MetaMask Mobile, the eth_requestAccounts is commonly called to connect their MetaMask wallet from the MetaMask SDK which in MetaMask-GPT authorization server. After that, other API methods can be used to interact with the Ethereum blockchain on behalf of the user. Here’s a step-by-step breakdown of what happens when connect the MetaMask wallet and eth_requestAccounts is called:
 
 - **Request Access:** The MetaMask SDK calls **eth_requestAccounts** to ask for access to the user's MetaMask accounts.
 
@@ -103,7 +103,7 @@ After one user scanning the QR code, the eth_requestAccounts is commonly called 
 - **Response:** The promise returned by eth_requestAccounts will resolve with an array of account addresses that the user approved. Typically, this will include the default Ethereum account in MetaMask Mobile.
 
 
-### Generate a MetaMask token
+### MetaMask token Generation
 
 The **MetaMask token(mmToken)** is composed of expiration time, account, and signature. 
 
@@ -111,7 +111,7 @@ The **MetaMask token(mmToken)** is composed of expiration time, account, and sig
 
 **account:** The account parameter represents the user's account address that is involved in the signing process. It is essential for the eth_signTypedData_v4 method, as it specifies which account is signing the message. The account information is critical for verifying the token later and ensuring that it is tied to the correct user.
 
-**sign:** The sign variable captures the signature generated by the provider when the eth_signTypedData_v4 method is called. This signature is crucial for the integrity and authenticity of the generated token. In the final token (mmToken), the signature, along with the expiration time and account, creates a composite string that can be used for authentication or validation purposes.
+**signature:** The signature generated by the provider when the eth_signTypedData_v4 method is called. This signature is crucial for the integrity and authenticity of the generated token. In the final token (mmToken), the signature, along with the expiration time and account, creates a composite string that can be used for authentication or validation purposes.
 
 :::info
 I’ve tried to create mmToken to function like a JWT by [Panva Jose](https://github.com/panva/jose), but the signatures generated by eth_signTypedData_v4 and personal_sign differ from a JWT's.
@@ -173,7 +173,14 @@ const getMsgParams = (account, expireTime) => {
         return msgParams;
     };
 ```
-eth_signTypedData_v4 presents a data message for the user to sign in a structured and readable format and returns the signed response. At last, the **MetaMask token(mmToken)** is composed of expiration time, account, and signature. 
+eth_signTypedData_v4 presents a data message for the user to sign in a structured and readable format and returns the signed response. 
+
+When calling eth_signTypedData_v4 in the MetaMask SDK, the MetaMask Mobile app will handle the confirmation.
+- Once the eth_signTypedData_v4 signing request is initiated, if the user is on MetaMask Mobile, they will receive a push notification or in-app prompt asking them to confirm the signature request.
+- On mobile, you will see the structured data they are being asked to sign and can either accept or reject it.
+- Once you confirm, the signed data will be sent back to MetaMask-GPT authorization server, where you can handle it for further processing.
+- At last, the expiration time, account, and signature are combined to form the MetaMask token (mmToken).
+
 ```javascript title="mmToken generation"
     async tokenGenerate(sdk, account, expireTime) {
         const provider = sdk.getProvider();
@@ -184,21 +191,26 @@ eth_signTypedData_v4 presents a data message for the user to sign in a structure
         const msgParams = getMsgParams(account, expireTime);
 
         try {
+            //highlight-start
             sign = await provider.request({
                 method: 'eth_signTypedData_v4',
                 params: [account, JSON.stringify(msgParams)],
-            });        
+            });
+            //highlight-end
         } catch (err) {
             console.error(err);
         }
+        //highlight-start
         const mmToken = `${expireTime}.${account}.${sign}`;
+        //highlight-end
         return mmToken;
     }
 ```
 
 
 ### Access the resources
-In OAuth 2.0, obtaining an access token is a critical step that allows a client application to securely access protected resources on behalf of a user. The access token serves as proof that the client has been authorized, and it must be presented with each request to the resource server. This mechanism ensures that resource servers can enforce access controls and that user data remains secure.
+In The MetaMask authorization code flow, obtaining an MetaMask token is a critical step that allows a client application to securely access protected resources on behalf of a user. The MetaMask token serves as proof that the client has been authorized, and it must be presented with each request to the resource server. This mechanism ensures that resource servers can enforce access controls and that user data remains secure.
+
 In OAuth 2.0, the standard and recommended method for a client to send an access token when accessing protected resources is to include it in the Authorization header using the Bearer token scheme:
 
 ```bash title="HTTP REQUEST: Token in OAuth 2.0 code flow"
@@ -207,7 +219,7 @@ Host: api.example.com
 Authorization: Bearer {access_token}
 ```
 
-the ChatGPT action API currently does not support custom headers, including the Authorization header. This limitation means that you cannot send the access token in the header as per the standard OAuth 2.0 practice. As a result, you have to include the token in the POST body instead.
+But the ChatGPT action API currently does not support custom headers, including the Authorization header. This limitation means that you cannot send the access token in the header as per the standard OAuth 2.0 practice. As a result, you have to include the token in the POST body instead.
 
 ```bash title="HTTP REQUEST: Token in MetaMask auth code flow"
 POST /metamask/getSelectedAccount HTTP/1.1
