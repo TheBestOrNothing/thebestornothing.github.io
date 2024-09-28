@@ -1,5 +1,5 @@
 ---
-description: Connect to MetaMask-GPT Following authorization code flow.
+description: Connect to MetaMask-GPT following authorization code flow.
 ---
 
 # Connect to MetaMask-GPT
@@ -23,7 +23,7 @@ Goal: Establish a connection between the user’s MetaMask account and the GPT c
 The prompts of connecting to MetaMask-GPT are improved by [Prompt Engineer GPT](https://chatgpt.com/g/g-5XtVuRE8Y-prompt-engineer). This GPT let you become a pro prompt engineer, by learning and applying best prompt practices.
 :::
 
-## MetaMask’s OAuth-Inspired Flow
+## How MetaMask-GPT Uses OAuth Principles
 The chatGPT client using the MetaMask authorization code flow acquire an access token and resources protected by the MetaMask-GPT identity platform (typically APIs). The concepts of mmcode (MetaMask authorization code) and mmToken (MetaMask token) draw inspiration from the OAuth 2.0 authorization framework, bringing secure authentication and authorization to decentralized applications. "mmCode" is an abbreviation for the MetaMask authorization code, which is a temporary code used during the authorization flow to exchange for an access token. "mmToken" is an abbreviation for the MetaMask Token, a short-lived access token used in the authorization flow. This token is exchanged after successful authentication using the mmCode (MetaMask authorization code) and is used to authorize subsequent API requests on behalf of the user. This diagram shows a high-level view of the MetaMask authorization code flow:
 
 ```mermaid
